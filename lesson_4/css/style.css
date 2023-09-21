@@ -1,0 +1,69 @@
+@import url("reset.css");
+
+img {
+  height: 200px;
+}
+
+a {
+  color: gray;
+}
+
+span {
+  color: navy;
+}
+/* * {
+  color: blueviolet;
+} */
+
+#pure-titans {
+  color: chocolate;
+}
+
+.chapter {
+  color: darkorchid;
+}
+
+.chapter.powerful-titan {
+  color: indigo;
+}
+
+[class*="__title"] {
+  color: cadetblue;
+}
+
+div.text-block {
+  color: darkgreen;
+}
+
+.info-block,
+#founding-titan {
+  color: aqua;
+}
+
+#armored-titan p,
+#armored-titan h3 {
+  color: darksalmon;
+}
+
+.chapter .titan-info {
+  color: cornflowerblue;
+}
+
+#beast-titan * {
+  color: deeppink;
+}
+
+#cart-titan > h3,
+#cart-titan > p {
+  color: chartreuse;
+}
+
+#colossal-titan h3,
+.titan-face ~ p {
+  color: darkorange;
+}
+
+#female-titan h3,
+.beautiful-titan-face + p {
+  color: goldenrod;
+}

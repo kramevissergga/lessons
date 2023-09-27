@@ -1,0 +1,64 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+  color: #7d7d7d;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+}
+img {
+  height: 400px;
+}
+
+.title {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  color: #37393f;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1.27; /* 38/30 */
+}
+#about-project .title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.wrong {
+  text-decoration: line-through;
+}
+header .title {
+  text-align: center;
+  text-shadow: 5px 5px 6px gray;
+}
+.text {
+  line-height: 1.46; /* 26.31/18 */
+}
+#main .text {
+  text-indent: 15px;
+  letter-spacing: 30px;
+  word-spacing: 100px;
+}
+.subtitle {
+  color: #6b77e5;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.27; /* 25.40/20 */
+  font-weight: 600;
+}
+.list {
+  font-weight: 500;
+}
+.navigation {
+  color: #19c88e;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.text a {
+  color: #8f135d;
+  font-weight: 600;
+  font-style: oblique;
+}
+span {
+  color: #3c3d3f;
+  font-style: oblique;
+}

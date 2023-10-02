@@ -14,9 +14,11 @@ body {
   line-height: 1.46; /* 26.31/18 */
   margin-bottom: 40px;
 }
+.about-us-main-section {
+  margin-bottom: 42px;
+}
 
 .about-us-subtitle {
-  margin-top: 42px;
   margin-bottom: 12px;
   color: #6b77e5;
 }
@@ -71,7 +73,6 @@ body {
 .benefits-text-subtitle {
   margin-bottom: 21px;
   color: #40ddb6;
-  text-align: justify;
   line-height: 1.27;
 }
 

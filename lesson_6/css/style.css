@@ -6,15 +6,22 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 18px;
 }
+
 .about-us-block {
   max-width: 692px;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.46; /* 26.31/18 */
+  margin-bottom: 40px;
+}
+
+.about-us-subtitle {
+  margin-top: 42px;
+  margin-bottom: 12px;
+  color: #6b77e5;
 }
 
 .about-us-block p {
-  margin-bottom: 42px;
   text-align: justify;
 }
 
@@ -22,7 +29,7 @@ body {
   margin-bottom: 37px;
 }
 
-.title {
+[class*="-title"] {
   text-align: left;
   color: #37393f;
   font-size: 30px;
@@ -32,41 +39,43 @@ body {
   text-transform: capitalize;
 }
 
-.subtitle {
-  color: #6b77e5;
+[class*="-subtitle"] {
   font-size: 20px;
   text-align: left;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  margin-bottom: 12px;
   line-height: 1.27;
 }
+
 .benefits-block {
   font-size: 0px;
 }
+
 .benefits-text {
   max-width: 332px;
   display: inline-block;
 }
+
 .benefits-block img {
   max-width: 331px;
   vertical-align: top;
   margin-right: 29px;
 }
 
-.benefits-block .title {
+.benefits-text-title {
   font-size: 25px;
   text-transform: none;
   margin-bottom: 15px;
 }
 
-.benefits-block .subtitle {
+.benefits-text-subtitle {
+  margin-bottom: 21px;
   color: #40ddb6;
   text-align: justify;
-  margin-bottom: 21px;
   line-height: 1.27;
 }
-.benefits-list li {
+
+.benefits-text-list li {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 30px;
@@ -83,24 +92,28 @@ body {
   display: inline-block;
   max-width: 563px;
   vertical-align: top;
+  padding-top: 21px;
   margin-right: 38px;
 }
+
 .jewellery-imgs {
   display: inline-block;
 }
+
 .jewellery-imgs img {
   max-width: 273px;
   margin-right: 22px;
 }
 
-.jewellery-text .title {
+.jewellery-text-title {
   color: #0e333d;
   font-family: "DM Serif Text", serif;
   font-weight: 400;
   font-size: 59px;
   line-height: 1.46;
 }
-.jewellery-text .subtitle {
+
+.jewellery-text-subtitle {
   color: #d06b00;
   font-family: "Inter", sans-serif;
   font-size: 28px;
@@ -108,6 +121,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 13px;
 }
+
 .jewellery-text p {
   color: #474747;
   font-size: 20px;
@@ -119,6 +133,7 @@ body {
 .practice {
   background-color: rgb(113, 151, 195);
 }
+
 .invalid-span {
   background-color: #d06b00;
   display: block;
@@ -127,6 +142,7 @@ body {
   padding: 30px 31px;
   margin: 100px 101px 102px;
 }
+
 .invalid-div {
   background-color: aquamarine;
   display: inline;
@@ -135,6 +151,7 @@ body {
   padding: 30px 31px 32px 33px;
   margin: 100px;
 }
+
 .surprice-box {
   background-color: chartreuse;
   box-sizing: content-box;

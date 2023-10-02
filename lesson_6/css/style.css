@@ -1,0 +1,150 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+  color: #7d7d7d;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+}
+.about-us-block {
+  max-width: 692px;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.46; /* 26.31/18 */
+}
+
+.about-us-block p {
+  margin-bottom: 42px;
+  text-align: justify;
+}
+
+.about-us-block img {
+  margin-bottom: 37px;
+}
+
+.title {
+  text-align: left;
+  color: #37393f;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.27; /* 38.10/30 */
+  text-transform: capitalize;
+}
+
+.subtitle {
+  color: #6b77e5;
+  font-size: 20px;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 12px;
+  line-height: 1.27;
+}
+.benefits-block {
+  font-size: 0px;
+}
+.benefits-text {
+  max-width: 332px;
+  display: inline-block;
+}
+.benefits-block img {
+  max-width: 331px;
+  vertical-align: top;
+  margin-right: 29px;
+}
+
+.benefits-block .title {
+  font-size: 25px;
+  text-transform: none;
+  margin-bottom: 15px;
+}
+
+.benefits-block .subtitle {
+  color: #40ddb6;
+  text-align: justify;
+  margin-bottom: 21px;
+  line-height: 1.27;
+}
+.benefits-list li {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.jewellery {
+  text-align: center;
+  margin: 140px;
+  font-size: 0;
+}
+
+.jewellery-text {
+  display: inline-block;
+  max-width: 563px;
+  vertical-align: top;
+  margin-right: 38px;
+}
+.jewellery-imgs {
+  display: inline-block;
+}
+.jewellery-imgs img {
+  max-width: 273px;
+  margin-right: 22px;
+}
+
+.jewellery-text .title {
+  color: #0e333d;
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-size: 59px;
+  line-height: 1.46;
+}
+.jewellery-text .subtitle {
+  color: #d06b00;
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+.jewellery-text p {
+  color: #474747;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.practice {
+  background-color: rgb(113, 151, 195);
+}
+.invalid-span {
+  background-color: #d06b00;
+  display: block;
+  height: 100px;
+  width: 200px;
+  padding: 30px 31px;
+  margin: 100px 101px 102px;
+}
+.invalid-div {
+  background-color: aquamarine;
+  display: inline;
+  height: 200px;
+  width: 300px;
+  padding: 30px 31px 32px 33px;
+  margin: 100px;
+}
+.surprice-box {
+  background-color: chartreuse;
+  box-sizing: content-box;
+  margin-top: 100px;
+  margin-right: 101px;
+  margin-bottom: 102px;
+  margin-left: 103px;
+  padding-top: 30px;
+  padding-right: 31px;
+  padding-bottom: 32px;
+  padding-left: 33px;
+}

@@ -10,7 +10,8 @@ body {
 .about-us-block {
   max-width: 692px;
   font-weight: 400;
-  line-height: 1.46; /* 26.31/18 */
+  line-height: 1.46;
+  margin: 0 auto;
 }
 .about-us-text {
   margin-bottom: 41px;
@@ -35,7 +36,7 @@ body {
   font-size: 30px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  line-height: 1.27; /* 38.10/30 */
+  line-height: 1.27;
   text-transform: capitalize;
 }
 

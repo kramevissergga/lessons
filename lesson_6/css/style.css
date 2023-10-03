@@ -13,7 +13,7 @@ body {
   line-height: 1.46; /* 26.31/18 */
   margin-bottom: 40px;
 }
-.about-us-main-section {
+.about-us-title + .about-us-text {
   margin-bottom: 42px;
 }
 
@@ -22,7 +22,7 @@ body {
   color: #6b77e5;
 }
 
-.about-us-block p {
+.about-us-text {
   text-align: justify;
 }
 

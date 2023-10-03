@@ -57,7 +57,7 @@ body {
   display: inline-block;
 }
 
-.benefits-block img {
+.benefits-img {
   max-width: 331px;
   vertical-align: top;
   margin-right: 29px;
@@ -88,7 +88,7 @@ body {
   font-size: 0;
 }
 
-.jewellery-text {
+.jewellery-content {
   display: inline-block;
   max-width: 563px;
   vertical-align: top;
@@ -105,7 +105,7 @@ body {
   margin-right: 22px;
 }
 
-.jewellery-text-title {
+.jewellery-title {
   color: #0e333d;
   font-family: "DM Serif Text", serif;
   font-weight: 400;
@@ -113,7 +113,7 @@ body {
   line-height: 1.46;
 }
 
-.jewellery-text-subtitle {
+.jewellery-subtitle {
   color: #d06b00;
   font-family: "Inter", sans-serif;
   font-size: 28px;
@@ -122,7 +122,7 @@ body {
   margin-bottom: 13px;
 }
 
-.jewellery-text p {
+.jewellery-text {
   color: #474747;
   font-size: 20px;
   font-weight: 400;

@@ -11,10 +11,9 @@ body {
   max-width: 692px;
   font-weight: 400;
   line-height: 1.46; /* 26.31/18 */
-  margin-bottom: 40px;
 }
-.about-us-title + .about-us-text {
-  margin-bottom: 42px;
+.about-us-text {
+  margin-bottom: 41px;
 }
 
 .about-us-subtitle {
@@ -83,8 +82,7 @@ body {
 }
 
 .jewellery {
-  text-align: center;
-  margin: 140px;
+  padding: 140px;
   font-size: 0;
 }
 

@@ -11,7 +11,7 @@ body {
   max-width: 692px;
   font-weight: 400;
   line-height: 1.46;
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
 }
 .about-us-text {
   margin-bottom: 41px;
@@ -86,7 +86,7 @@ body {
 
 .jewellery {
   font-size: 0;
-  margin: 20px auto;
+  margin: 0 auto;
   max-width: 1170px;
 }
 

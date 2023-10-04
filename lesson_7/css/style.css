@@ -1,0 +1,118 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+  color: #7d7d7d;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+}
+
+a {
+  color: #40ddb6;
+  font-weight: 400;
+}
+.subtitle a {
+  margin-left: 15px;
+}
+
+.licencing,
+.project-info {
+  padding: 0 10px;
+  border: 5px dashed #37393f;
+  margin: 0 auto 50px auto;
+}
+
+.licencing {
+  max-width: 1241px;
+}
+.project-info {
+  max-width: 845px;
+}
+
+.title-block {
+  font-size: 0;
+  color: #37393f;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.icons-block {
+  margin-bottom: 100px;
+}
+.photography-block {
+  margin-bottom: 112.5px;
+}
+
+.icons-block .text {
+  margin-bottom: 38.5px;
+}
+.photography-block .text {
+  margin-bottom: 24px;
+}
+.photography-block .subtitle {
+  margin-bottom: 12.5px;
+}
+
+.subtitle-square {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin-left: 6px;
+  background-color: #40ddb6;
+}
+.subtitle {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+.title-block .subtitle {
+  font-family: "Inter", sans-serif;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.title {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.21;
+  margin-bottom: 11px;
+  text-transform: capitalize;
+}
+.title-block .title {
+  font-size: 60px;
+  margin-bottom: 0;
+}
+
+.project-info .title {
+  line-height: 1.27;
+  margin-bottom: 13px;
+}
+.text {
+  line-height: 1.46;
+  font-weight: 400px;
+}
+.project-info .text p {
+  margin-bottom: 35px;
+}
+.project-info li,
+.project-info li {
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+.project-info ul,
+.project-info ol {
+  margin-left: 40px;
+  margin-bottom: 30px;
+}
+.img-links {
+  /* Не бийте за висячий відступ */
+  line-height: 1.46;
+  margin-bottom: 35.5px;
+}

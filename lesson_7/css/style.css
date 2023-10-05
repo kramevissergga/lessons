@@ -7,34 +7,42 @@ body {
   font-size: 18px;
 }
 
-a {
-  color: #40ddb6;
-  font-weight: 400;
-}
-.subtitle a {
-  margin-left: 15px;
-}
-
 .licencing,
-.project-info {
-  padding: 0 10px;
+.project-info,
+.clothing,
+.jewellery {
+  padding: 30px;
   border: 5px dashed #37393f;
   margin: 0 auto 50px auto;
 }
-
 .licencing {
-  max-width: 1241px;
+  max-width: 1281px;
 }
-.project-info {
-  max-width: 845px;
+.licencing a {
+  color: #40ddb6;
+  font-weight: 400;
+}
+.licencing .subtitle a {
+  margin-left: 15px;
 }
 
+.title-block * {
+  display: inline-block;
+}
 .title-block {
   font-size: 0;
-  color: #37393f;
-  text-align: center;
-  margin-bottom: 70px;
 }
+.licencing .title-block {
+  margin-bottom: 16px;
+  text-align: center;
+}
+.subtitle-square {
+  height: 12px;
+  width: 12px;
+  margin-right: 6px;
+  background-color: #40ddb6;
+}
+
 .icons-block {
   margin-bottom: 100px;
 }
@@ -52,13 +60,6 @@ a {
   margin-bottom: 12.5px;
 }
 
-.subtitle-square {
-  display: inline-block;
-  height: 12px;
-  width: 12px;
-  margin-left: 6px;
-  background-color: #40ddb6;
-}
 .subtitle {
   color: #37393f;
   font-family: "Poppins", sans-serif;
@@ -70,10 +71,8 @@ a {
 
 .title-block .subtitle {
   font-family: "Inter", sans-serif;
-  display: inline-block;
   font-size: 18px;
   font-weight: 500;
-  margin-bottom: 16px;
 }
 
 .title {
@@ -82,14 +81,22 @@ a {
   font-size: 40px;
   font-weight: 700;
   line-height: 1.21;
-  margin-bottom: 11px;
   text-transform: capitalize;
 }
-.title-block .title {
-  font-size: 60px;
-  margin-bottom: 0;
+.licencing h2.title {
+  margin-bottom: 11px;
 }
-
+.licencing h1 {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.project-info {
+  max-width: 885px;
+}
+.project-info ol {
+  list-style: decimal-leading-zero;
+}
 .project-info .title {
   line-height: 1.27;
   margin-bottom: 13px;
@@ -97,6 +104,9 @@ a {
 .text {
   line-height: 1.46;
   font-weight: 400px;
+}
+.project-info .text {
+  margin-bottom: 35px;
 }
 .project-info .text p {
   margin-bottom: 35px;
@@ -108,11 +118,136 @@ a {
 }
 .project-info ul,
 .project-info ol {
-  margin-left: 40px;
+  padding-left: 40px;
   margin-bottom: 30px;
 }
 .img-links {
   /* Не бийте за висячий відступ */
   line-height: 1.46;
   margin-bottom: 35.5px;
+}
+
+.clothing {
+  max-width: 1300px;
+  font-family: "Causten", sans-serif;
+  color: #807d7e;
+  font-size: 20px;
+  line-height: 1.67;
+  letter-spacing: 0.4px;
+}
+.clothing-content {
+  padding-left: 21px;
+}
+.clothing .title-block {
+  margin-bottom: 30px;
+}
+
+.clothing .title {
+  color: #3c4242;
+  font-family: "Core Sans C", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.56px;
+}
+.clothing .text {
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.clothing .text p {
+  margin-bottom: 30px;
+}
+.clothing .text span {
+  font-weight: 700;
+}
+.clothing .subtitle {
+  font-size: 20px;
+  font-family: "Core Sans C", sans-serif;
+  color: #807d7e;
+  margin-bottom: 34px;
+  font-weight: 600;
+  line-height: 1.67;
+  letter-spacing: 0.4px;
+}
+.title-shape {
+  width: 6px;
+  height: 28px;
+  background-color: #8a33fd;
+  margin-right: 15px;
+  border-radius: 10px;
+  vertical-align: top;
+}
+.link {
+  font-family: "Core Sans C", sans-serif;
+  font-weight: 600;
+}
+.jewellery {
+  max-width: 1162px;
+  font-size: 0;
+}
+
+.jewellery-content {
+  max-width: 503px;
+  margin-top: 70px;
+  margin-right: 75px;
+}
+.jewellery-imgs {
+  font-size: 0;
+}
+.jewellery img {
+  width: 100%;
+  height: 100%;
+}
+.big-image img {
+  margin: 19px 0 0 -10px;
+}
+.small-image img {
+  margin: 14px 0 0 -10px;
+}
+.jewellery-imgs * {
+  border-radius: 235px;
+}
+.big-image,
+.small-image {
+  border: 1px solid #502203;
+}
+.big-image {
+  width: 307px;
+  height: 500px;
+}
+.small-image {
+  width: 177px;
+  height: 336px;
+  margin-top: 85px;
+  margin-right: 30px;
+}
+.jewellery-imgs *,
+.jewellery-imgs,
+.jewellery-content {
+  display: inline-block;
+  vertical-align: top;
+}
+.jewellery .subtitle {
+  color: #d58417;
+  font-family: "Cormorant Infant", serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 27px;
+}
+.jewellery .title {
+  color: #000;
+  font-family: "Cormorant Infant", serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 31px;
+}
+.jewellery .text {
+  color: #606060;
+  font-family: "Cormorant Infant", serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.4;
 }

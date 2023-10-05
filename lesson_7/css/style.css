@@ -212,12 +212,12 @@ body {
   border: 1px solid #502203;
 }
 .big-image {
-  width: 307px;
-  height: 500px;
+  max-width: 307px;
+  max-height: 500px;
 }
 .small-image {
-  width: 177px;
-  height: 336px;
+  max-width: 177px;
+  max-height: 336px;
   margin-top: 85px;
   margin-right: 30px;
 }

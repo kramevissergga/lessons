@@ -6,20 +6,24 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 18px;
 }
-
+.clothing,
 .favors,
 .latest-projects {
   padding: 30px;
   border: 5px dashed #37393f;
   margin: 0 auto 50px;
 }
-
+.button {
+  display: block;
+  text-transform: capitalize;
+}
 .favors {
   max-width: 743px;
 }
 
 .title {
   font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
 }
 
 .title,
@@ -29,7 +33,6 @@ body {
 
 .title-block .title {
   font-size: 40px;
-  text-transform: capitalize;
   font-weight: 700;
   line-height: 1.21;
 }
@@ -100,8 +103,7 @@ body {
   font-size: 16px;
   line-height: 1.35;
 }
-.favors .more-about-button {
-  display: block;
+.favors .button {
   padding: 21.5px 27px;
   background-color: #6b77e5;
   max-width: 184px;
@@ -109,7 +111,6 @@ body {
   color: #fff;
   font-weight: 600;
   line-height: 1.22;
-  text-transform: capitalize;
 }
 
 .latest-projects {
@@ -181,4 +182,122 @@ body {
 }
 .sheet-item-6 {
   background-image: url("../img/sheet-img-6.png");
+}
+
+.clothing .title-block * {
+  display: inline-block;
+}
+
+.clothing {
+  max-width: 1300px;
+  font-family: "Causten", sans-serif;
+  color: #807d7e;
+  font-size: 20px;
+  line-height: 1.67;
+  letter-spacing: 0.4px;
+}
+
+.clothing-content {
+  padding-left: 21px;
+}
+
+.clothing .title-block {
+  margin-bottom: 30px;
+}
+
+.clothing .title {
+  color: #3c4242;
+  font-family: "Core Sans C", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.56px;
+}
+
+.clothing .text {
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.clothing .text p {
+  margin-bottom: 30px;
+}
+
+.clothing .text span {
+  font-weight: 700;
+}
+
+.clothing .subtitle {
+  font-size: 20px;
+  font-family: "Core Sans C", sans-serif;
+  color: #807d7e;
+  margin-bottom: 34px;
+  font-weight: 600;
+  line-height: 1.67;
+  letter-spacing: 0.4px;
+}
+
+.title-shape {
+  width: 6px;
+  height: 28px;
+  background-color: #8a33fd;
+  margin-right: 15px;
+  border-radius: 10px;
+  vertical-align: top;
+}
+
+.clothing .link {
+  font-family: "Core Sans C", sans-serif;
+  font-weight: 600;
+}
+
+.shop-now {
+  margin: 0 auto 50px;
+  width: 1240px;
+  height: 640px;
+  border-radius: 12px;
+  background: url("../img/green-background.png") no-repeat 0 0 / 50%,
+    url("../img/party.png") no-repeat center right / contain;
+}
+
+.shop-now {
+  padding: 183px 74px;
+  color: #fff;
+  font-family: "Core Sans C", sans-serif;
+}
+
+.shop-now .content {
+  max-width: 466px;
+}
+.shop-now .title {
+  color: #fff;
+  font-size: 34px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  line-height: 1.47;
+  letter-spacing: 0.208px;
+  text-transform: uppercase;
+}
+
+.shop-now .text {
+  font-family: "Causten", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+
+.shop-now .button {
+  font-family: "Causten", sans-serif;
+  background-color: #fff;
+  color: #3c4242;
+  text-align: center;
+  min-height: 46px;
+  max-width: 177px;
+  font-weight: 600;
+  padding: 12px 44px;
+  border-radius: 8px;
+}
+.practice {
 }

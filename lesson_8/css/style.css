@@ -6,6 +6,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 18px;
 }
+
 .clothing,
 .favors,
 .latest-projects {
@@ -299,5 +300,55 @@ body {
   padding: 12px 44px;
   border-radius: 8px;
 }
-.practice {
+
+.breaking-bad div {
+  height: 200px;
+  width: 100%;
+  background-image: url("https://uploads-ssl.webflow.com/63851d467dc151a9f46a992b/638630e705534b463196f6f8_62b46638bedf9aabc6b3c121_Walter%2520white.jpeg");
+  margin-bottom: 5%;
+}
+
+.breaking-bad {
+  margin-bottom: 200px;
+  width: 100%;
+  height: 2500px;
+  background-image: url("https://www.indiewire.com/wp-content/uploads/2018/07/breakingbadformon_wide-22d0f0aa716956d518b391936d3bc323dd7a3848-s900-c85.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.white {
+  background-size: 50px 50px;
+}
+
+.walter {
+  background-size: cover;
+  background-position: center;
+}
+
+.heisenberg {
+  background-size: contain;
+  background-position: center;
+}
+.stairs-1 {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top left;
+}
+
+.stairs-2 {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+}
+
+.stairs-3 {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+}
+.gallery {
+  background-size: 50px;
+  background-repeat: repeat-y;
 }

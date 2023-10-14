@@ -7,7 +7,8 @@ body {
   font-size: 18px;
 }
 
-.favors {
+.favors,
+.latest-projects {
   padding: 30px;
   border: 5px dashed #37393f;
   margin: 0 auto 50px;
@@ -17,18 +18,18 @@ body {
   max-width: 743px;
 }
 
-.favors .subtitle {
-  color: #37393f;
+.title {
+  font-family: "Poppins", sans-serif;
 }
 
-.favors .title {
+.title,
+.subtitle {
   color: #37393f;
-  font-family: "Poppins", sans-serif;
-  text-transform: capitalize;
 }
 
 .title-block .title {
   font-size: 40px;
+  text-transform: capitalize;
   font-weight: 700;
   line-height: 1.21;
 }
@@ -51,7 +52,7 @@ body {
   margin-bottom: 20px;
 }
 
-.favors .text p {
+.text p {
   line-height: 1.46;
   margin-bottom: 15px;
 }
@@ -109,4 +110,75 @@ body {
   font-weight: 600;
   line-height: 1.22;
   text-transform: capitalize;
+}
+
+.latest-projects {
+  max-width: 1287px;
+}
+
+.latest-projects .title-block .subtitle,
+.latest-projects .title-block .title {
+  margin-bottom: 14px;
+}
+
+.latest-projects .title-block .text {
+  display: inline-block;
+}
+
+.latest-projects .title-block .subtitle {
+  display: inline-block;
+}
+
+.latest-projects .title-block {
+  margin: 0 auto 47px;
+  text-align: center;
+  max-width: 852px;
+}
+
+.sheet-row {
+  font-size: 0;
+  margin-bottom: 58px;
+}
+
+[class*="sheet-item"] {
+  display: inline-block;
+  width: 371px;
+  min-height: 582px;
+  padding-top: 525px;
+  margin-left: 34px;
+  background: url("../img/sheet-img-1.png") no-repeat 0 0 / 381px 501px;
+}
+
+[class*="sheet-item"] .title {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.27;
+}
+
+[class*="sheet-item"] .date {
+  font-size: 14px;
+  vertical-align: middle;
+  line-height: 1.46;
+  padding-left: 25.35px;
+  background-repeat: no-repeat;
+  background-position: 3px 0;
+  background-size: 22px;
+  background-image: url("../img/calendar.png");
+}
+
+.sheet-item-2 {
+  background-image: url("../img/sheet-img-2.png");
+}
+.sheet-item-3 {
+  background-image: url("../img/sheet-img-3.png");
+}
+.sheet-item-4 {
+  background-image: url("../img/sheet-img-4.png");
+}
+.sheet-item-5 {
+  background-image: url("../img/sheet-img-5.png");
+}
+.sheet-item-6 {
+  background-image: url("../img/sheet-img-6.png");
 }

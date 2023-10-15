@@ -15,7 +15,7 @@ body {
   margin: 0 auto 50px;
 }
 .button {
-  display: block;
+  display: inline-block;
   text-transform: capitalize;
 }
 .favors {
@@ -37,7 +37,9 @@ body {
   font-weight: 700;
   line-height: 1.21;
 }
-
+.favors .title-block .title {
+  max-width: 414px;
+}
 .title-block .subtitle {
   font-weight: 500;
   line-height: 1.2;
@@ -79,7 +81,7 @@ body {
 }
 
 .favors .cards div {
-  max-width: 300.3px;
+  max-width: 300px;
   display: inline-block;
   padding: 32px;
   padding-left: 90px;
@@ -107,8 +109,8 @@ body {
 .favors .button {
   padding: 21.5px 27px;
   background-color: #6b77e5;
-  max-width: 184px;
-  min-height: 65px;
+  min-width: 184px;
+  height: 65px;
   color: #fff;
   font-weight: 600;
   line-height: 1.22;
@@ -145,12 +147,14 @@ body {
 [class*="sheet-item"] {
   display: inline-block;
   width: 371px;
-  min-height: 582px;
-  padding-top: 525px;
   margin-left: 34px;
-  background: url("../img/sheet-img-1.png") no-repeat top center / 381px 501px;
 }
 
+[class*="sheet-item"] .image {
+  margin-bottom: 24px;
+  height: 501px;
+  background: url("../img/sheet-img-1.png") no-repeat center / cover, #635157;
+}
 [class*="sheet-item"] .title {
   margin-bottom: 10px;
   font-size: 20px;
@@ -162,26 +166,26 @@ body {
   font-size: 14px;
   vertical-align: middle;
   line-height: 1.46;
-  padding-left: 25.35px;
+  padding-left: 25px;
   background-repeat: no-repeat;
   background-position: 3px 0;
   background-size: 22px;
   background-image: url("../img/calendar.png");
 }
 
-.sheet-item-2 {
+.sheet-item-2 .image {
   background-image: url("../img/sheet-img-2.png");
 }
-.sheet-item-3 {
+.sheet-item-3 .image {
   background-image: url("../img/sheet-img-3.png");
 }
-.sheet-item-4 {
+.sheet-item-4 .image {
   background-image: url("../img/sheet-img-4.png");
 }
-.sheet-item-5 {
+.sheet-item-5 .image {
   background-image: url("../img/sheet-img-5.png");
 }
-.sheet-item-6 {
+.sheet-item-6 .image {
   background-image: url("../img/sheet-img-6.png");
 }
 
@@ -263,22 +267,24 @@ body {
 
 .right-side,
 .left-side {
+  min-height: 640px;
   width: 614px;
-  height: 640px;
   display: inline-block;
   vertical-align: middle;
   background: no-repeat center right / cover;
 }
 .right-side {
   border-radius: 0 12px 12px 0;
+  background-color: #d39e2b;
   background-image: url("../img/party.png");
 }
 .left-side {
   border-radius: 12px 0 0 12px;
+  background-color: #0b2a13;
   background-image: url("../img/green-background.png");
 }
 .shop-now .left-side .content {
-  padding: 183px 74px;
+  padding: 183px 0 0 74px;
 }
 
 .shop-now .title {
@@ -305,9 +311,9 @@ body {
   background-color: #fff;
   color: #3c4242;
   text-align: center;
-  min-height: 46px;
+  height: 46px;
   font-size: 18px;
-  max-width: 177px;
+  min-width: 177px;
   font-weight: 600;
   padding: 12px 44px;
   border-radius: 8px;

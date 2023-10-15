@@ -148,7 +148,7 @@ body {
   min-height: 582px;
   padding-top: 525px;
   margin-left: 34px;
-  background: url("../img/sheet-img-1.png") no-repeat 0 0 / 381px 501px;
+  background: url("../img/sheet-img-1.png") no-repeat top center / 381px 501px;
 }
 
 [class*="sheet-item"] .title {
@@ -253,23 +253,34 @@ body {
 }
 
 .shop-now {
-  margin: 0 auto 50px;
-  width: 1240px;
-  height: 640px;
-  border-radius: 12px;
-  background: url("../img/green-background.png") no-repeat 0 0 / 50%,
-    url("../img/party.png") no-repeat center right / contain;
-}
-
-.shop-now {
-  padding: 183px 74px;
   color: #fff;
   font-family: "Core Sans C", sans-serif;
+  margin: 0 auto 50px;
+  max-width: 1230px;
+  border-radius: 12px;
+  font-size: 0;
 }
 
-.shop-now .content {
-  max-width: 466px;
+.right-side,
+.left-side {
+  width: 614px;
+  height: 640px;
+  display: inline-block;
+  vertical-align: middle;
+  background: no-repeat center right / cover;
 }
+.right-side {
+  border-radius: 0 12px 12px 0;
+  background-image: url("../img/party.png");
+}
+.left-side {
+  border-radius: 12px 0 0 12px;
+  background-image: url("../img/green-background.png");
+}
+.shop-now .left-side .content {
+  padding: 183px 74px;
+}
+
 .shop-now .title {
   color: #fff;
   font-size: 34px;
@@ -295,6 +306,7 @@ body {
   color: #3c4242;
   text-align: center;
   min-height: 46px;
+  font-size: 18px;
   max-width: 177px;
   font-weight: 600;
   padding: 12px 44px;
@@ -311,7 +323,6 @@ body {
 .breaking-bad {
   margin-bottom: 200px;
   width: 100%;
-  height: 2500px;
   background-image: url("https://www.indiewire.com/wp-content/uploads/2018/07/breakingbadformon_wide-22d0f0aa716956d518b391936d3bc323dd7a3848-s900-c85.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -349,6 +360,9 @@ body {
   background-position: top right;
 }
 .gallery {
-  background-size: 50px;
+  background-size: 100px;
+  max-width: 100px;
   background-repeat: repeat-y;
+  display: inline-block;
+  margin-left: 50px;
 }

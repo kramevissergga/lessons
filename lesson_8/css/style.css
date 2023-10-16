@@ -74,9 +74,7 @@ body {
   line-height: 1.65;
   margin-bottom: 23px;
   padding-left: 35px;
-  background-image: url("../img/check-mark.png");
-  background-repeat: no-repeat;
-  background-position: left 3px;
+  background: url("../img/check-mark.png") no-repeat left 3px / 27px;
   min-height: 30px;
 }
 
@@ -89,6 +87,7 @@ body {
 }
 .favors .experience-card {
   background: url("../img/experience.png") no-repeat 37px 31px / 40px;
+  margin-right: 21px;
 }
 .favors .awards-winner-card {
   background: url("../img/awards.png") no-repeat 37px 31px / 40px;
@@ -101,6 +100,7 @@ body {
 }
 .favors .cards {
   margin-bottom: 69px;
+  font-size: 0;
 }
 .favors .cards .text {
   font-size: 16px;
@@ -110,7 +110,7 @@ body {
   padding: 21.5px 27px;
   background-color: #6b77e5;
   min-width: 184px;
-  height: 65px;
+  min-height: 65px;
   color: #fff;
   font-weight: 600;
   line-height: 1.22;
@@ -139,15 +139,15 @@ body {
   max-width: 852px;
 }
 
-.sheet-row {
+.sheet {
   font-size: 0;
-  margin-bottom: 58px;
 }
 
 [class*="sheet-item"] {
   display: inline-block;
   width: 371px;
-  margin-left: 34px;
+  margin-right: 34px;
+  margin-bottom: 58px;
 }
 
 [class*="sheet-item"] .image {
@@ -284,7 +284,7 @@ body {
   background-image: url("../img/green-background.png");
 }
 .shop-now .left-side .content {
-  padding: 183px 0 0 74px;
+  padding: 183px 50px 50px 74px;
 }
 
 .shop-now .title {
@@ -311,7 +311,7 @@ body {
   background-color: #fff;
   color: #3c4242;
   text-align: center;
-  height: 46px;
+  min-height: 46px;
   font-size: 18px;
   min-width: 177px;
   font-weight: 600;

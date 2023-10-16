@@ -189,10 +189,6 @@ body {
   background-image: url("../img/sheet-img-6.png");
 }
 
-.clothing .title-block * {
-  display: inline-block;
-}
-
 .clothing {
   max-width: 1300px;
   font-family: "Causten", sans-serif;
@@ -206,17 +202,17 @@ body {
   padding-left: 21px;
 }
 
-.clothing .title-block {
-  margin-bottom: 30px;
-}
-
 .clothing .title {
+  margin-bottom: 30px;
   color: #3c4242;
   font-family: "Core Sans C", sans-serif;
   font-size: 28px;
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: 0.56px;
+  background: url("../img/title-decorator.png") no-repeat top left / 6px 28px;
+  padding-left: 21px;
+  min-height: 28px;
 }
 
 .clothing .text {

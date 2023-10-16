@@ -69,6 +69,16 @@ ul {
   padding-left: 16px;
   margin-bottom: 16px;
 }
+.line {
+  display: inline-block;
+  width: 130px;
+  height: 10px;
+  border-bottom: #1e2939 dashed 1px;
+}
+.bold-span {
+  color: #000;
+  font-weight: 700;
+}
 .work-exp-block {
   margin-bottom: 43px;
 }

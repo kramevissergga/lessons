@@ -1,0 +1,11 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+}
+
+[class*="-container"] {
+  padding: 30px;
+  border: 5px dashed #37393f;
+  margin: 0 auto 50px;
+}

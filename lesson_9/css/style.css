@@ -185,7 +185,6 @@ main > .button {
 }
 .how-we-work-container .card {
   max-width: 300px;
-  display: inline-block;
 }
 .how-we-work-container .card::before {
   content: "";
@@ -227,4 +226,142 @@ main > .button {
 }
 .how-we-work-container .card a:hover {
   color: #40ddb6;
+}
+
+.jewellery-container {
+  width: 1284px;
+  font-family: Cormorant Infant, serif;
+  font-weight: 700;
+  color: #000;
+  font-size: 0;
+}
+
+.jewellery-container > * {
+  display: inline-block;
+  vertical-align: top;
+}
+.jewellery-container h2 {
+  font-size: 60px;
+  line-height: 1.15;
+  max-width: 488px;
+  padding-top: 117px;
+  display: inline-block;
+}
+.jewellery-container h2::after {
+  content: "";
+  margin-top: 10px;
+  display: block;
+  width: 60%;
+  height: 3px;
+  border-bottom: #78473b solid 3px;
+}
+
+.jewellery-container .card {
+  max-width: 334px;
+  cursor: pointer;
+  display: inline-block;
+}
+.jewellery-container .card img {
+  height: 100%;
+  margin-left: 10px;
+  margin-top: 9px;
+  /*
+    Гадки не маю що це.
+  */
+  transition: 0.1s;
+}
+.jewellery-container .card h5 {
+  font-size: 24px;
+  line-height: 1.4;
+}
+.jewellery-container .card h5.card:not(:last-child) {
+  margin-bottom: 4px;
+}
+.jewellery-container .card:hover img {
+  margin: 0;
+}
+.jewellery-container .card .img-border {
+  width: 334px;
+  height: 381px;
+  margin-bottom: 34px;
+  border: #000 solid 1px;
+}
+.jewellery-container .card:not(:last-child) {
+  margin-right: 55px;
+}
+.jewellery-container .card h3 {
+  font-size: 46px;
+  line-height: 1.13;
+  margin-bottom: 31px;
+}
+.white-ring {
+  padding-top: 32px;
+}
+
+.hover-game {
+  width: 100%;
+  height: 1000px;
+  background-color: #000;
+  font-family: Creepster, serif;
+  color: #fff;
+  padding: 100px 30px;
+  font-size: 0;
+}
+.road div {
+  background-color: aqua;
+  height: 100px;
+  width: 100px;
+}
+.road * {
+  display: block;
+  cursor: url("../img/slava-cursor.png"), auto;
+}
+.start {
+  background-color: yellow;
+  display: block;
+}
+.end {
+  background-color: red;
+  visibility: hidden;
+}
+.road {
+  font-size: 0;
+  display: inline-block;
+}
+#level-1 .title {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#level-1 .road div:nth-child(even) {
+  height: 453px;
+  width: 240px;
+}
+#level-1 .road div:nth-child(odd) {
+  height: 71px;
+  width: 1100px;
+}
+#level-1 .start {
+  width: 240px;
+  height: 86px;
+}
+#level-1 .end {
+  width: 75px;
+  height: 71px;
+}
+
+#level-2 .road div:nth-of-type(odd) {
+  background-color: red;
+  width: 799px;
+  height: 74px;
+}
+#level-2 .road div:nth-of-type(even) {
+  width: 29px;
+  height: 72px;
+}
+
+.start:hover ~ *,
+.road *:hover,
+.road *:hover ~ * {
+  visibility: visible;
 }

@@ -12,7 +12,6 @@ body {
   padding: 21.5px 27px;
   background-color: #6b77e5;
   min-width: 184px;
-  min-height: 65px;
   color: #fff;
   font-weight: 600;
   line-height: 1.22;
@@ -106,7 +105,6 @@ main > .button {
 
 .benefits-info ul li {
   vertical-align: middle;
-  min-height: 27px;
   font-size: 18px;
 }
 
@@ -182,27 +180,27 @@ main > .button {
   line-height: 1.21;
 }
 
-.who-cares-container .cards > *:not(:last-child) {
+.who-cares-container ul > *:not(:last-child) {
   margin-bottom: 31px;
 }
 
-.who-cares-container .card h3 {
+.who-cares-container li h3 {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 12px;
 }
 
-.who-cares-container .card {
+.who-cares-container li {
   border: 1px solid #e3e3e3;
   padding: 28px 41px 28px 38px;
 }
 
-.who-cares-container .card .text {
+.who-cares-container li .text {
   padding-left: 46px;
 }
 
-.who-cares-container .card h3::before {
+.who-cares-container li h3::before {
   content: "";
   width: 27px;
   height: 27px;
@@ -222,15 +220,18 @@ main > .button {
 
 .how-we-work-container .card {
   max-width: 300px;
+  padding: 0 10px;
   display: inline-block;
 }
 
 .how-we-work-container .card::before {
   content: "";
-  width: 100%;
-  height: 100px;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
   margin-bottom: 22px;
-  background: no-repeat center / contain;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRvy5rkOUbXyh6H4zQy96-jzWLP-Yo2tIQNw&usqp=CAU")
+    no-repeat center / cover;
 }
 
 .how-we-work-container .cards :nth-child(1)::before {
@@ -306,12 +307,13 @@ main > .button {
 
 .jewellery-container .card {
   max-width: 334px;
-  cursor: pointer;
   display: inline-block;
 }
-
+.jewellery-container .ring-link {
+  cursor: pointer;
+}
 .jewellery-container .card img {
-  height: 100%;
+  width: 100%;
   margin-left: 10px;
   margin-top: 9px;
   /*
@@ -329,13 +331,12 @@ main > .button {
   margin-bottom: 4px;
 }
 
-.jewellery-container .card:hover img {
+.jewellery-container .ring-link:hover img {
   margin: 0;
 }
 
 .jewellery-container .card .img-border {
   width: 334px;
-  height: 381px;
   margin-bottom: 34px;
   border: #000 solid 1px;
 }

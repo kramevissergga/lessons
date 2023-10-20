@@ -3,18 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="css/style.css">
-  <title>Background</title>
+  <title>Pseudo</title>
+
 </head>
 
 <body>
   <header>
-    Везе ся чоловік поїздом.
-    Дустає фурт бананы, посыпує їх сольов тай ушмарює гет у оболок.
-    Посыпує — ушмарює. Тай сяк цілу дорогу. У єден момент сосід му ни бирує тай каже:
-    —Чоловіче, нашо ты тото робиш?
-    —Просто мині ся ни люблять солині бананы
+    <div class="some-content"></div>
   </header>
   <main>
     <a href="#why-us" class="button">Why Us?!</a>
@@ -150,19 +147,38 @@
         <h5>$144.00</h5>
       </div>
     </div>
+    <a href="#" class="button">Hide.</a>
     <div class="hover-game">
-      <!--
-        <div id="level-1">
+      <div class="rules">
+        <h2 class="title">rules</h2>
+        <div class="rule">
+          <div class="yellow-square"></div>
+          <div class="line"></div>
+          <p>start</p>
+        </div>
+        <div class="rule">
+          <div class="aqua-square"></div>
+          <div class="line"></div>
+          <p>Move field</p>
+        </div>
+        <div class="rule">
+          <a href="#level-1" class="end"></a>
+          <div class="line"></div>
+          <p>Finish! Click to continue</p>
+        </div>
+        <div class="rule">
+          <p>set scaling to 100% and press f11 for better expirience</p>
+        </div>
+      </div>
+      <div id="level-1">
         <h2 class="title">Level 1</h2>
         <div class="road">
           <a href="#" class="start"></a>
           <div></div>
           <div></div>
-          <a href="#level-1" class="end"></a>
+          <a href="#level-2" class="end"></a>
         </div>
       </div>
-      -->
-
       <div id="level-2">
         <h2 class="title">Level 2</h2>
         <div class="road">
@@ -180,18 +196,47 @@
           <div></div>
           <br>
           <div></div>
+          <br>
+          <div></div>
+          <br>
+          <div></div>
+          <a href="#level-3" class="end"></a>
+        </div>
+      </div>
+      <div id="level-3">
+        <h2 class="title">Level 3</h2>
+        <div class="road">
+          <a href="#" class="start"></a>
+          <div></div>
+          <br>
+          <div></div>
+          <br>
+          <div></div>
+          <br>
+          <div></div>
+          <br>
+          <div></div>
+          <br>
+          <div></div>
+          <br>
+          <div></div>
+          <br>
+          <div onmouseenter="scream()"></div>
           <a href="#level-1" class="end"></a>
         </div>
       </div>
     </div>
-    <a href="#" class="button">Hide.</a>
+
+
+
+    <script>
+      function scream() {
+        window.location.href = 'scream.html';
+      }
+    </script>
   </main>
   <footer>
-    Везе ся чоловік поїздом.
-    Дустає фурт бананы, посыпує їх сольов тай ушмарює гет у оболок.
-    Посыпує — ушмарює. Тай сяк цілу дорогу. У єден момент сосід му ни бирує тай каже:
-    —Чоловіче, нашо ты тото робиш?
-    —Просто мині ся ни люблять солині бананы
+    <div class="some-content"></div>
   </footer>
 </body>
 

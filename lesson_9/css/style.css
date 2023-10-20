@@ -5,7 +5,9 @@ body {
   color: #7d7d7d;
   font-family: Inter, sans-serif;
   font-size: 18px;
+  background-color: #000;
 }
+
 .button {
   padding: 21.5px 27px;
   background-color: #6b77e5;
@@ -15,23 +17,28 @@ body {
   font-weight: 600;
   line-height: 1.22;
 }
+
 .button:hover {
   background-color: #40ddb6;
 }
+
 main > .button {
   margin: 50px;
   border-radius: 10px;
 }
+
 [class*="-container"] {
   padding: 30px;
   border: 5px dashed #37393f;
   margin: 0 auto 50px;
+  background-color: #fff;
 }
 
 .text {
   line-height: 1.46;
   text-align: justify;
 }
+
 .text p:not(:last-child) {
   margin-bottom: 16px;
 }
@@ -39,9 +46,11 @@ main > .button {
 [class*="-container"]:not(:target) {
   display: none;
 }
+
 .why-us-container {
   max-width: 762px;
 }
+
 .why-us-container h2,
 .why-us-container h3,
 .why-us-container h4 {
@@ -49,21 +58,25 @@ main > .button {
   font-weight: 600;
   line-height: 1.27;
 }
+
 .why-us-container > h2 {
   font-size: 30px;
   color: #37393f;
   margin-bottom: 12.5px;
   text-transform: capitalize;
 }
+
 .why-us-container h3 {
   font-size: 25px;
   color: #37393f;
 }
+
 .why-us-container h4 {
   color: #6b77e5;
   margin-bottom: 12px;
   font-size: 20px;
 }
+
 .why-us-container .text:not(:last-child) {
   margin-bottom: 41px;
 }
@@ -71,29 +84,36 @@ main > .button {
 .benefits-block h3 {
   margin-bottom: 21px;
 }
+
 .benefits-block h4 {
   color: #40ddb6;
   margin-bottom: 15px;
 }
+
 .benefits-block {
   margin-bottom: 50px;
   font-size: 0;
 }
+
 .benefits-info {
   max-width: 329px;
   display: inline-block;
 }
+
 .benefits-info ul {
   margin-bottom: 15px;
 }
+
 .benefits-info ul li {
   vertical-align: middle;
   min-height: 27px;
   font-size: 18px;
 }
+
 .benefits-info ul li:not(:last-child) {
   margin-bottom: 30px;
 }
+
 .benefits-info ul li::before {
   content: "";
   width: 27px;
@@ -102,9 +122,11 @@ main > .button {
   margin-bottom: -7px;
   background: url("../img/marker.png") no-repeat center / contain;
 }
+
 .benefits-info *:last-child {
   margin-bottom: 0;
 }
+
 .benefits-block > img {
   width: 331px;
   height: 266px;
@@ -114,6 +136,7 @@ main > .button {
 .who-cares-container {
   max-width: 743px;
 }
+
 .who-cares-container h2,
 .how-we-work-container h2,
 .who-cares-container h3,
@@ -122,6 +145,7 @@ main > .button {
   font-family: Poppins, sans-serif;
   color: #37393f;
 }
+
 .title-block .greensquare-title::before {
   content: "";
   width: 12px;
@@ -129,44 +153,55 @@ main > .button {
   margin-right: 6px;
   background: #40ddb6;
 }
+
 .who-cares-container > *:not(:last-child) {
   margin-bottom: 48px;
 }
+
 .who-cares-container .title-block {
   margin-bottom: 10px;
 }
+
 .who-cares-container .title-block h2 {
   max-width: 414px;
 }
+
 .title-block > *:not(:last-child) {
   margin-bottom: 16px;
 }
+
 .title-block .greensquare-title {
   color: #37393f;
   font-weight: 500;
   line-height: 1.2;
 }
+
 .title-block h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 1.21;
 }
+
 .who-cares-container .cards > *:not(:last-child) {
   margin-bottom: 31px;
 }
+
 .who-cares-container .card h3 {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 12px;
 }
+
 .who-cares-container .card {
   border: 1px solid #e3e3e3;
   padding: 28px 41px 28px 38px;
 }
+
 .who-cares-container .card .text {
   padding-left: 46px;
 }
+
 .who-cares-container .card h3::before {
   content: "";
   width: 27px;
@@ -180,12 +215,16 @@ main > .button {
   width: 1290px;
   text-align: center;
 }
+
 .how-we-work-container .title-block {
   margin-bottom: 41px;
 }
+
 .how-we-work-container .card {
   max-width: 300px;
+  display: inline-block;
 }
+
 .how-we-work-container .card::before {
   content: "";
   width: 100%;
@@ -193,19 +232,23 @@ main > .button {
   margin-bottom: 22px;
   background: no-repeat center / contain;
 }
+
 .how-we-work-container .cards :nth-child(1)::before {
-  background-image: url("../img/slava.png");
+  background-image: url("../img/calendar-circle.png");
 }
+
 .how-we-work-container .cards :nth-child(2)::before {
-  background-image: url("../img/autist.png");
+  background-image: url("../img/puzzle-circle.png");
 }
+
 .how-we-work-container .cards :nth-child(3)::before {
-  background-image: url("../img/idiot.png");
+  background-image: url("../img/shield-circle.png");
 }
 
 .how-we-work-container .card:not(:last-child) {
   margin-right: 117px;
 }
+
 .how-we-work-container .card h3 {
   font-weight: 600;
   font-size: 25px;
@@ -213,10 +256,12 @@ main > .button {
   line-height: 1.27;
   margin-bottom: 16px;
 }
+
 .how-we-work-container .card .text {
   text-align: center;
   margin-bottom: 37px;
 }
+
 .how-we-work-container .card a {
   color: #6b77e5;
   text-align: center;
@@ -224,6 +269,7 @@ main > .button {
   line-height: 1.2;
   text-transform: capitalize;
 }
+
 .how-we-work-container .card a:hover {
   color: #40ddb6;
 }
@@ -240,6 +286,7 @@ main > .button {
   display: inline-block;
   vertical-align: top;
 }
+
 .jewellery-container h2 {
   font-size: 60px;
   line-height: 1.15;
@@ -247,6 +294,7 @@ main > .button {
   padding-top: 117px;
   display: inline-block;
 }
+
 .jewellery-container h2::after {
   content: "";
   margin-top: 10px;
@@ -261,6 +309,7 @@ main > .button {
   cursor: pointer;
   display: inline-block;
 }
+
 .jewellery-container .card img {
   height: 100%;
   margin-left: 10px;
@@ -270,92 +319,237 @@ main > .button {
   */
   transition: 0.1s;
 }
+
 .jewellery-container .card h5 {
   font-size: 24px;
   line-height: 1.4;
 }
+
 .jewellery-container .card h5.card:not(:last-child) {
   margin-bottom: 4px;
 }
+
 .jewellery-container .card:hover img {
   margin: 0;
 }
+
 .jewellery-container .card .img-border {
   width: 334px;
   height: 381px;
   margin-bottom: 34px;
   border: #000 solid 1px;
 }
+
 .jewellery-container .card:not(:last-child) {
   margin-right: 55px;
 }
+
 .jewellery-container .card h3 {
   font-size: 46px;
   line-height: 1.13;
   margin-bottom: 31px;
 }
+
 .white-ring {
   padding-top: 32px;
 }
 
 .hover-game {
   width: 100%;
-  height: 1000px;
-  background-color: #000;
   font-family: Creepster, serif;
   color: #fff;
   padding: 100px 30px;
   font-size: 0;
 }
+
 .road div {
   background-color: aqua;
+  visibility: hidden;
 }
+
 .road * {
   display: inline-block;
-  cursor: url("../img/slava-cursor.png"), auto;
+  cursor: url("../img/game-cursor.png") 16 16, auto;
 }
+
 .start {
   background-color: yellow;
   display: block;
 }
+
 .end {
   background-color: red;
   visibility: hidden;
+  width: 70px;
+  height: 70px;
+  transition: 0.3s;
 }
+
+.end:hover {
+  width: 80px;
+  height: 80px;
+}
+
 .road {
   font-size: 0;
   display: inline-block;
+  min-height: 800px;
 }
-#level-1 .title {
-  font-size: 30px;
+
+.hover-game .title {
+  font-size: 60px;
   text-align: center;
   margin-bottom: 30px;
 }
+
+.rules {
+  margin-bottom: 50px;
+}
+
+.rules .title {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.rule > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.rule:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.rule [class*="-square"] {
+  height: 70px;
+  width: 70px;
+}
+
+.rule .yellow-square {
+  background-color: yellow;
+}
+
+.rule .aqua-square {
+  background-color: aqua;
+}
+
+.rule .end {
+  visibility: visible;
+}
+
+.line {
+  width: 70px;
+  height: 8px;
+  background-color: white;
+  margin: 0 30px;
+}
+
+.rule p {
+  font-size: 32px;
+  text-align: left;
+}
+
+[id*="level-"]:not(:target) {
+  display: none;
+}
+
 #level-1 .road div:nth-child(even) {
-  height: 453px;
+  height: 653px;
   width: 240px;
 }
+
 #level-1 .road div:nth-child(odd) {
   height: 71px;
   width: 1100px;
 }
+
 #level-1 .start {
   width: 240px;
   height: 86px;
 }
-#level-1 .end {
-  width: 75px;
-  height: 71px;
+
+#level-2 .start {
+  margin-left: auto;
+  width: 60px;
+  height: 60px;
 }
 
 #level-2 .road div:nth-of-type(odd) {
-  background-color: red;
-  width: 799px;
-  height: 74px;
+  width: 100%;
+  height: 54px;
 }
+
 #level-2 .road div:nth-of-type(even) {
+  width: 39px;
+  height: 72px;
+}
+
+#level-2 .road div:nth-of-type(4n) {
+  margin-left: 760px;
+}
+
+#level-3 .road {
+  width: 800px;
+}
+
+#level-3 .start {
+  margin-left: auto;
+  width: 60px;
+  height: 60px;
+}
+
+#level-3 .end {
+  display: block;
+  margin-left: auto;
+}
+
+#level-3 .road div:nth-of-type(1) {
+  width: 100%;
+  height: 70px;
+}
+
+#level-3 .road div:nth-of-type(2) {
   width: 29px;
   height: 72px;
+}
+
+#level-3 .road div:nth-of-type(3) {
+  width: 100%;
+  height: 38px;
+}
+
+#level-3 .road div:nth-of-type(n + 3) {
+  display: block;
+  margin-left: auto;
+}
+
+#level-3 .road div:nth-of-type(4) {
+  width: 20px;
+  height: 72px;
+}
+
+#level-3 .road div:nth-of-type(5),
+#level-3 .road div:nth-of-type(7) {
+  width: 70px;
+  height: 16px;
+}
+
+#level-3 .road div:nth-of-type(6) {
+  margin-right: 54px;
+}
+
+#level-3 .road div:nth-of-type(6),
+#level-3 .road div:nth-of-type(8) {
+  width: 16px;
+  height: 50px;
+}
+
+.fazber-gif {
+  width: 100%;
+}
+
+.screamer {
+  overflow: hidden;
 }
 
 .start:hover ~ *,

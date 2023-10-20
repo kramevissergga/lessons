@@ -309,11 +309,9 @@ main > .button {
 }
 .road div {
   background-color: aqua;
-  height: 100px;
-  width: 100px;
 }
 .road * {
-  display: block;
+  display: inline-block;
   cursor: url("../img/slava-cursor.png"), auto;
 }
 .start {

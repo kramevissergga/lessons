@@ -435,6 +435,8 @@ main > .button {
 }
 
 .rule .end {
+  padding: 15px;
+  font-size: 24px;
   visibility: visible;
 }
 

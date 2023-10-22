@@ -383,7 +383,6 @@ main > .button {
   visibility: hidden;
   width: 70px;
   height: 70px;
-  transition: 0.3s;
 }
 
 .end:hover {

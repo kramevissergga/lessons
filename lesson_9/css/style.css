@@ -422,9 +422,18 @@ main > .button {
   margin-bottom: 30px;
 }
 
-.rules-list > li [class*="-square"] {
+.rules-list > li .square {
   height: 70px;
   width: 70px;
+}
+.rules-list > li:nth-of-type(1) .square {
+  background-color: yellow;
+}
+.rules-list > li:nth-of-type(2) .square {
+  background-color: aqua;
+}
+.rules-list > li:nth-of-type(3) .square {
+  background-color: red;
 }
 
 .rules-list > li p {
@@ -437,7 +446,6 @@ main > .button {
   font-size: 24px;
   visibility: visible;
 }
-
 .play {
   padding: 10px;
   width: 100px;
@@ -448,17 +456,6 @@ main > .button {
 }
 .play:hover {
   width: 120px;
-}
-.yellow-square {
-  background-color: yellow;
-}
-
-.aqua-square {
-  background-color: aqua;
-}
-
-.red-square {
-  background-color: red;
 }
 
 .line {

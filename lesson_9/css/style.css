@@ -410,20 +410,34 @@ main > .button {
 .rules .title {
   text-align: left;
 }
-
-.rules > li > * {
+.rules-list {
+  margin-bottom: 40px;
+}
+.rules-list > li > * {
   display: inline-block;
   vertical-align: middle;
 }
 
-.rules > li:not(:last-child) {
+.rules-list > li:not(:last-child) {
   margin-bottom: 30px;
 }
 
-.rules > li [class*="-square"] {
+.rules-list > li [class*="-square"] {
   height: 70px;
   width: 70px;
 }
+
+.rules-list > li p {
+  font-size: 32px;
+  text-align: left;
+}
+
+.rules-list > li .end {
+  padding: 15px;
+  font-size: 24px;
+  visibility: visible;
+}
+
 .play {
   padding: 10px;
   width: 100px;
@@ -447,22 +461,11 @@ main > .button {
   background-color: red;
 }
 
-.rules > li .end {
-  padding: 15px;
-  font-size: 24px;
-  visibility: visible;
-}
-
 .line {
   width: 70px;
   height: 8px;
   background-color: white;
   margin: 0 30px;
-}
-
-.rules > li p {
-  font-size: 32px;
-  text-align: left;
 }
 
 [id*="level-"]:not(:target) {

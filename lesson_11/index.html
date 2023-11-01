@@ -11,32 +11,42 @@
 <body>
   <header class="header">
     <div class="header__container">
-      <div class="header__logo">
-        <img src="img/main-logo.svg" alt="Euphoria logo">
+      <div class="header__logo logo">
+        <img class="logo__icon" src="img/main-logo.svg" alt="Euphoria logo">
       </div>
-      <ul class="header__categories">
-        <li>Shop</li>
-        <li>Men</li>
-        <li>Women</li>
-        <li>Combos</li>
-        <li>Joggers</li>
+      <ul class="header__categories categories">
+        <li class="categories__item">
+          <a href="#" class="categories__link">Shop</a>
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Men</a>
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link categories__link--active">Women</a>
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Combos</a>
+        </li>
+        <li class="categories__item">
+          <a href="#" class="categories__link">Joggers</a>
+        </li>
       </ul>
       <div class="header__search">
       </div>
-      <ul class="header__buttons">
-        <li>
-          <a href="#">
-            <img src="img/icons/heart.svg" alt="Favorites">
+      <ul class="header__buttons buttons-header">
+        <li class="buttons-header__button">
+          <a class="buttons-header__link" href="#">
+            <img class="buttons-header__image" src="img/icons/heart.svg" alt="Favorites">
           </a>
         </li>
-        <li>
-          <a href="#">
-            <img src="img/icons/user.svg" alt="Profile">
+        <li class="buttons-header__button">
+          <a class="buttons-header__link" href="#">
+            <img class="buttons-header__image" src="img/icons/user.svg" alt="Profile">
           </a>
         </li>
-        <li>
-          <a href="#">
-            <img src="img/icons/cart.svg" alt="Cart">
+        <li class="buttons-header__button">
+          <a class="buttons-header__link" href="#">
+            <img class="buttons-header__image" src="img/icons/cart.svg" alt="Cart">
           </a>
         </li>
       </ul>
@@ -48,43 +58,49 @@
         <div class="top__gallery gallery">
           <div class="gallery__slider slider">
             <div class="slider__item">
-              <img src="img/content/gallery-mini-1.webp" alt="Product image">
+              <img class="slider__image" src="img/content/gallery-mini-1.webp" alt="Product image">
             </div>
             <div class="slider__item">
-              <img src="img/content/gallery-mini-2.webp" alt="Product image">
+              <img class="slider__image" src="img/content/gallery-mini-2.webp" alt="Product image">
             </div>
             <div class="slider__item">
-              <img src="img/content/gallery-mini-3.webp" alt="Product image">
+              <img class="slider__image" src="img/content/gallery-mini-3.webp" alt="Product image">
             </div>
             <div class="slider__button slider__button--up"></div>
             <div class="slider__button slider__button--down"></div>
           </div>
-          <div class="chosen-img">
-            <img src="img/content/gallery-selected.webp" alt="Chosen product image">
+          <div class="gallery__chosen chosen-img">
+            <img class="chosen-img__image" src="img/content/gallery-selected.webp" alt="Chosen product image">
           </div>
         </div>
         <div class="top__info info-top">
-          <p class="info-top__tabs">
-            <a href="#">Shop</a> > <a href="#">Women</a> > <a href="#">Top</a>
-          </p>
+          <div class="info-top">
+            <div class="info-top__breadcrumb breadcrumb">
+              <ul class="breadcrumb__list">
+                <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Shop</a></li>
+                <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Women</a></li>
+                <li class="breadcrumb__item">Top</li>
+              </ul>
+            </div>
+          </div>
           <h2 class="info-top__title">Raven Hoodie With
             Black colored Design</h2>
           <div class="info-top__rating rating-block">
             <div class="rating-block__stars"></div>
             <p class="rating-block__decimal">3.5</p>
             <div class="rating-block__comments">
-              <a href="#">120 comment</a>
+              <a class="rating-block__link" href="#">120 comment</a>
             </div>
           </div>
           <div class="info-top__size size-block">
             <h5 class="size-block__title">Select Size</h5>
             <a href="#" class="size-block__link">Size Guide</a>
-            <ul class="size-block__sizes-list">
-              <li>XS</li>
-              <li>S</li>
-              <li>M</li>
-              <li>L</li>
-              <li>XL</li>
+            <ul class="size-block__sizes-list list-sizes">
+              <li class="list-sizes__item">XS</li>
+              <li class="list-sizes__item">S</li>
+              <li class="list-sizes__item">M</li>
+              <li class="list-sizes__item list-sizes__item--active">L</li>
+              <li class="list-sizes__item">XL</li>
             </ul>
           </div>
           <div class="info-top__color-picker color-picker">
@@ -96,29 +112,29 @@
               <li class="colors__item colors__item--red"></li>
             </ul>
           </div>
-          <a class="info-top__cart-btn">
-            <p>Add to cart</p>
+          <a class="info-top__cart-btn" href="#">
+            <p class="info-top__content">Add to cart</p>
           </a>
           <div class="info-top__price">
-            <p>$63.00</p>
+            <p class="info-top__content">$63.00</p>
           </div>
           <div class="info-top__line"></div>
-          <ul class="info-top__benefits">
-            <li>
-              <img src="img/icons/card.svg" alt="Card icon">
-              <p>Secure payment</p>
+          <ul class="info-top__benefits benefits-list">
+            <li class="benefits-list__item">
+              <img class="benefits-list__image" src="img/icons/card.svg" alt="Card icon">
+              <p class="benefits-list__content">Secure payment</p>
             </li>
-            <li>
-              <img src="img/icons/shirt.svg" alt="Shirt icon">
-              <p>Size & Fit</p>
+            <li class="benefits-list__item">
+              <img class="benefits-list__image" src="img/icons/shirt.svg" alt="Shirt icon">
+              <p class="benefits-list__content">Size & Fit</p>
             </li>
-            <li>
-              <img src="img/icons/track.svg" alt="Track icon">
-              <p>Free shipping</p>
+            <li class="benefits-list__item">
+              <img class="benefits-list__image" src="img/icons/track.svg" alt="Track icon">
+              <p class="benefits-list__content">Free shipping</p>
             </li>
-            <li>
-              <img src="img/icons/loop.svg" alt="Loop icon">
-              <p>Free Shipping & Returns</p>
+            <li class="benefits-list__item">
+              <img class="benefits-list__image" src="img/icons/loop.svg" alt="Loop icon">
+              <p class="benefits-list__content">Free Shipping & Returns</p>
             </li>
           </ul>
         </div>
@@ -140,13 +156,13 @@
             <div class="tab-desc__counter tab-desc__counter--purple">
               21
             </div>
-            <div class="desc__tab tab-desc">
-              <p class="tab-desc__content">
-                Question & Answer
-              </p>
-              <div class="tab-desc__counter tab-desc__counter">
-                4
-              </div>
+          </div>
+          <div class="desc__tab tab-desc">
+            <p class="tab-desc__content">
+              Question & Answer
+            </p>
+            <div class="tab-desc__counter">
+              4
             </div>
           </div>
         </div>
@@ -159,27 +175,27 @@
             </p>
           </div>
           <ul class="desc-tab__product-specs specs">
-            <li>
+            <li class="specs__item">
               <p class="specs__property">Fabric</p>
               <p class="specs__value">Bio-washed Cotton</p>
             </li>
-            <li>
+            <li class="specs__item">
               <p class="specs__property">Pattern</p>
               <p class="specs__value">Printed</p>
             </li>
-            <li>
+            <li class="specs__item">
               <p class="specs__property">Fit</p>
               <p class="specs__value">Regular-fit</p>
             </li>
-            <li>
+            <li class="specs__item">
               <p class="specs__property">Neck</p>
               <p class="specs__value">Round Neck</p>
             </li>
-            <li>
+            <li class="specs__item">
               <p class="specs__property">Sleeve</p>
               <p class="specs__value">Half-sleeves</p>
             </li>
-            <li>
+            <li class="specs__item">
               <p class="specs__property">Style</p>
               <p class="specs__value">Casual Wear</p>
             </li>
@@ -188,8 +204,8 @@
         </div>
         <div class="desc__product-review review">
           <p class="review__lenght">1:00 M</p>
-          <a href="#" class="review__play-btn">
-            <img src="img/icons/play-btn.svg" alt="play icon on video">
+          <a href="#" class="review__play-btn play-btn">
+            <img class="play-btn__icon" src="img/icons/play-btn.svg" alt="play icon on video">
           </a>
           <p class="review__desc">Raven Hoodie with black colored design</p>
         </div>
@@ -204,7 +220,7 @@
           <div class="product-card__img">
             <img src="img/content/product-card.webp" alt="Product demo">
             <div class="product-card__like-btn">
-              <img src="img/icons/play-btn.svg" alt="play button icon">
+              <img src="img/icons/heart-circle.svg" alt="like icon">
             </div>
           </div>
           <h6 class="product-card__name">White T-Shirt</h6>
@@ -215,7 +231,7 @@
           <div class="product-card__img">
             <img src="img/content/product-card.webp" alt="Product demo">
             <div class="product-card__like-btn">
-              <img src="img/icons/play-btn.svg" alt="play button icon">
+              <img src="img/icons/heart-circle.svg" alt="like icon">
             </div>
           </div>
           <h6 class="product-card__name">Dark Green Sweatshirt</h6>
@@ -226,7 +242,7 @@
           <div class="product-card__img">
             <img src="img/content/product-card.webp" alt="Product demo">
             <div class="product-card__like-btn">
-              <img src="img/icons/play-btn.svg" alt="play button icon">
+              <img src="img/icons/heart-circle.svg" alt="like icon">
             </div>
           </div>
           <h6 class="product-card__name">Levender Sweatshirt</h6>
@@ -237,7 +253,7 @@
           <div class="product-card__img">
             <img src="img/content/product-card.webp" alt="Product demo">
             <div class="product-card__like-btn">
-              <img src="img/icons/play-btn.svg" alt="play button icon">
+              <img src="img/icons/heart-circle.svg" alt="like icon">
             </div>
           </div>
           <h6 class="product-card__name">Urban jacket with white ....</h6>
@@ -248,7 +264,7 @@
           <div class="product-card__img">
             <img src="img/content/product-card.webp" alt="Product demo">
             <div class="product-card__like-btn">
-              <img src="img/icons/play-btn.svg" alt="play button icon">
+              <img src="img/icons/heart-circle.svg" alt="like icon">
             </div>
           </div>
           <h6 class="product-card__name">Plain White T-Shirt</h6>
@@ -259,7 +275,7 @@
           <div class="product-card__img">
             <img src="img/content/product-card.webp" alt="Product demo">
             <div class="product-card__like-btn">
-              <img src="img/icons/play-btn.svg" alt="play button icon">
+              <img src="img/icons/heart-circle.svg" alt="like icon">
             </div>
           </div>
           <h6 class="product-card__name">Checks Shirt with white</h6>
@@ -270,7 +286,7 @@
           <div class="product-card__img">
             <img src="img/content/product-card.webp" alt="Product demo">
             <div class="product-card__like-btn">
-              <img src="img/icons/play-btn.svg" alt="play button icon">
+              <img src="img/icons/heart-circle.svg" alt="like icon">
             </div>
           </div>
           <h6 class="product-card__name">One piece black top & ....</h6>
@@ -281,7 +297,7 @@
           <div class="product-card__img">
             <img src="img/content/product-card.webp" alt="Product demo">
             <div class="product-card__like-btn">
-              <img src="img/icons/play-btn.svg" alt="play button icon">
+              <img src="img/icons/heart-circle.svg" alt="like icon">
             </div>
           </div>
           <h6 class="product-card__name">Denim Blue Shirt</h6>
@@ -294,63 +310,93 @@
   <footer class="footer">
     <div class="footer__container">
       <h3 class="footer__title">Need Help</h3>
-      <ul class="footer__list">
-        <li><a href="#" target="_blank">Contact Us</a></li>
-        <li><a href="#" target="_blank">Track Order</a></li>
-        <li><a href="#" target="_blank">Returns & Refunds</a></li>
-        <li><a href="#" target="_blank">FAQ's</a></li>
-        <li><a href="#" target="_blank">Career</a></li>
+      <ul class="footer__menu menu-footer">
+        <li class="menu-footer__item"><a class="menu-footer__link" href="#" target="_blank">Contact Us</a></li>
+        <li class="menu-footer__item"><a class="menu-footer__link" href="#" target="_blank">Track Order</a></li>
+        <li class="menu-footer__item"><a class="menu-footer__link" href="#" target="_blank">Returns & Refunds</a></li>
+        <li class="menu-footer__item"><a class="menu-footer__link" href="#" target="_blank">FAQ's</a></li>
+        <li class="menu-footer__item"><a class="menu-footer__link" href="#" target="_blank">Career</a></li>
       </ul>
       <h3 class="footer__title">Company</h3>
-      <ul class="footer__list">
-        <li><a href="#" target="_blank">About Us</a></li>
-        <li><a href="#" target="_blank">euphoria Blog</a></li>
-        <li><a href="#" target="_blank">euphoriastan</a></li>
-        <li><a href="#" target="_blank">Collaboration</a></li>
-        <li><a href="#" target="_blank">Media</a></li>
+      <ul class="footer__menu menu-footer">
+        <li class="menu-footer__item">
+          <a class="menu-footer__link" href="#" target="_blank">About Us</a>
+        </li>
+        <li class="menu-footer__item">
+          <a class="menu-footer__link" href="#" target="_blank">euphoria Blog</a>
+        </li>
+        <li class="menu-footer__item">
+          <a class="menu-footer__link" href="#" target="_blank">euphoriastan</a>
+        </li>
+        <li class="menu-footer__item">
+          <a class="menu-footer__link" href="#" target="_blank">Collaboration</a>
+        </li>
+        <li class="menu-footer__item">
+          <a class="menu-footer__link" href="#" target="_blank">Media</a>
+        </li>
       </ul>
       <h3 class="footer__title">More Info</h3>
-      <ul class="footer__list">
-        <li><a href="#" target="_blank">Term and Conditions</a></li>
-        <li><a href="#" target="_blank">Privacy Policy</a></li>
-        <li><a href="#" target="_blank">Shipping Policy</a></li>
-        <li><a href="#" target="_blank">Sitemap</a></li>
+      <ul class="footer__menu menu-footer">
+        <li class="menu-footer__item">
+          <a class="menu-footer__link" href="#" target="_blank">Term and Conditions</a>
+        </li>
+        <li class="menu-footer__item">
+          <a class="menu-footer__link" href="#" target="_blank">Privacy Policy</a>
+        </li>
+        <li class="menu-footer__item">
+          <a class="menu-footer__link" href="#" target="_blank">Shipping Policy</a>
+        </li>
+        <li class="menu-footer__item">
+          <a class="menu-footer__link" href="#" target="_blank">Sitemap</a>
+        </li>
       </ul>
       <h3 class="footer__title">Location</h3>
-      <ul class="footer__list">
-        <li>support@euphoria.in</li>
-        <li>Eklingpura Chouraha, Ahmedabad Main Road</li>
-        <li>(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</li>
+      <ul class="footer__menu menu-footer">
+        <li class="menu-footer__item">support@euphoria.in</li>
+        <li class="menu-footer__item">Eklingpura Chouraha, Ahmedabad Main Road</li>
+        <li class="menu-footer__item">(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</li>
       </ul>
       <div class="footer__social social">
-        <ul class="social__links">
-          <li><a href="#" target="_blank">
-              <img src="img/icons/facebook.svg" alt="facebook logo">
-            </a></li>
-          <li><a href="#" target="_blank">
-              <img src="img/icons/instagram.svg" alt="instagram logo">
-            </a></li>
-          <li><a href="#" target="_blank">
-              <img src="img/icons/twitter.svg" alt="twitter logo">
-            </a></li>
-          <li><a href="#" target="_blank">
-              <img src="img/icons/linkedin.svg" alt="linkedin logo">
-            </a></li>
+        <ul class="social__list list-social">
+          <li class="list-social__item">
+            <a class="list-social__link" href="#" target="_blank">
+              <img class="list-social__image" src="img/icons/facebook.svg" alt="facebook logo">
+            </a>
+          </li>
+          <li class="list-social__item">
+            <a class="list-social__link" href="#" target="_blank">
+              <img class="list-social__image" src="img/icons/instagram.svg" alt="instagram logo">
+            </a>
+          </li>
+          <li class="list-social__item">
+            <a class="list-social__link" href="#" target="_blank">
+              <img class="list-social__image" src="img/icons/twitter.svg" alt="twitter logo">
+            </a>
+          </li>
+          <li class="list-social__item">
+            <a class="list-social__link" href="#" target="_blank">
+              <img class="list-social__image" src="img/icons/linkedin.svg" alt="linkedin logo">
+            </a>
+          </li>
         </ul>
       </div>
       <h3 class="footer__title">Download The App</h3>
-      <div class="footer__apps apps">
-        <a class="apps__item" href="#" target="_blank">
-          <img src="img/icons/gplay.svg" alt="Link to google play">
-        </a>
-        <a class="apps__item" href="#" target="_blank">
-          <img src="img/icons/istore.svg" alt="Link to app store">
-        </a>
-      </div>
+      <ul class="footer__apps apps">
+        <li class="apps__item">
+          <a class="apps__link" href="#" target="_blank">
+            <img class="apps__image" src="img/icons/gplay.svg" alt="Link to google play">
+          </a>
+        </li>
+        <li class="apps__item">
+          <a class="apps__link" href="#" target="_blank">
+            <img class="apps__image" src="img/icons/istore.svg" alt="Link to app store">
+          </a>
+        </li>
+      </ul>
       <div class="footer__pop-categories pop-categories">
         <p class="pop-categories__content">Popular Categories</p>
         <a href="#" class="pop-categories-arrow">
-          <img src="img/icons/arrow.svg" alt="arrow icon">
+          <img class="pop-categories__icon" src="img/icons/arrow.svg" alt="arrow icon">
         </a>
       </div>
       <p class="footer__copyright">Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>

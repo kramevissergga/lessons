@@ -4,11 +4,11 @@
 body {
 }
 
-[class*="-container"] {
-  padding: 30px;
-  border: 5px dashed #37393f;
-  margin: 0 auto;
+[class*="__container"] {
+  max-width: 1px;
 }
-[class*="-container"]:not(:last-of-type) {
-  margin-bottom: 50px;
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
 }

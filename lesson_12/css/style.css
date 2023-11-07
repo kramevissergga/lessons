@@ -199,19 +199,18 @@ body {
 .practice__instruction {
   font-size: 50px;
   font-weight: 600;
-  color: white;
+  color: black;
+  position: absolute;
 }
 .heisenberg {
   width: 500px;
   position: absolute;
-  display: inline-block;
 }
 
 .heisenberg img {
   width: 100%;
 }
 
-.practice__instruction,
 .heisenberg__face,
 .heisenberg__hat,
 .heisenberg__glasses {

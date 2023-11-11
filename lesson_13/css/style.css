@@ -1,0 +1,246 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+}
+
+[class*="__container"] {
+  max-width: 1262px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+}
+.page {
+  padding: 100px;
+}
+
+.car {
+  padding: 50px;
+}
+.car__body {
+  position: relative;
+  background-color: wheat;
+  border-radius: 4% 15% 5% 5% / 56% 68% 32% 44%;
+  border: black solid 5px;
+  width: 720px;
+  height: 201px;
+}
+
+.wheel-hole__circle {
+  position: absolute;
+  bottom: -40px;
+  background-color: white;
+  border: black solid 5px;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.wheel-hole__circle:nth-of-type(1) {
+  left: 227px;
+}
+.wheel-hole__circle:nth-of-type(2) {
+  left: 572px;
+}
+
+.wheel-hole__square {
+  background-color: #fff;
+  height: 40px;
+  position: absolute;
+  bottom: -44.5px;
+  width: 710px;
+}
+
+.windows {
+  padding: 30px;
+}
+.windows * {
+  margin-right: 20px;
+}
+.window {
+  background-color: black;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.windows__front {
+  width: 76.044px;
+  height: 13.519px;
+  transform: rotate(54.967deg);
+  border-radius: 0px 0px 228px 228px;
+}
+.windows__front-side {
+  width: 64px;
+  height: 61px;
+  border-radius: 10px 0px 0px 10px;
+}
+.window-front-side {
+  position: relative;
+}
+.window-front-side__cut {
+  position: absolute;
+  top: -10px;
+  left: 80%;
+  width: 18px;
+  height: 40px;
+  transform: rotate(-34.495deg);
+  background-color: white;
+}
+.windows__door-right {
+  width: 75px;
+  height: 60px;
+}
+.windows__door-left {
+  width: 78px;
+  height: 44px;
+}
+.windows__back {
+  width: 127px;
+  height: 60px;
+}
+
+.door {
+  width: 56px;
+  height: 158px;
+  border: #000 solid 3px;
+  border-radius: 11px;
+  background-color: wheat;
+  display: inline-block;
+}
+.door__window {
+  width: 42px;
+  height: 57px;
+  transform: translate(4px, 4px);
+}
+.window {
+}
+.door__bullets {
+  width: 29px;
+  height: 22px;
+  position: relative;
+  top: 8px;
+  left: 10px;
+}
+.door__bullet {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  position: absolute;
+}
+.door__bullet:nth-of-type(1) {
+  top: 4px;
+  left: 0;
+}
+.door__bullet:nth-of-type(2) {
+  top: 0;
+  left: 12px;
+}
+.door__bullet:nth-of-type(3) {
+  top: 9px;
+  left: 12px;
+}
+.door__bullet:nth-of-type(4) {
+  top: 13px;
+  left: 20px;
+}
+
+.deco-lines {
+}
+.deco-lines__item {
+  height: 7px;
+}
+.deco-lines__item--green {
+  background-color: #3a6537;
+}
+.deco-lines__item--yellow {
+  background-color: yellow;
+}
+.deco-lines__item--orange {
+  background-color: orange;
+}
+.deco-lines__item--brown {
+  background-color: brown;
+}
+
+.wheel {
+  position: relative;
+  height: 77px;
+}
+.wheel__circle {
+  width: 77px;
+  height: 77px;
+  border-radius: 50%;
+  position: absolute;
+}
+.wheel__circle--big {
+  border: #000 solid 15px;
+}
+.wheel__circle--medium {
+  border: #000 solid 2px;
+  transform: scale(0.55);
+}
+.wheel__circle--small {
+  border: #000 solid 6px;
+  transform: scale(0.3);
+}
+
+.conditioner {
+  border-radius: 0% 19% 5% 95% / 100% 63% 37% 0%;
+  border: #000 3px solid;
+  background-color: wheat;
+  width: 72px;
+  height: 25px;
+  display: inline-block;
+}
+.gas-tank {
+  width: 20px;
+  height: 23px;
+  border: #000 3px solid;
+  border-radius: 6px;
+  background-color: wheat;
+}
+.lever {
+  width: 13px;
+  height: 20px;
+  background-color: #000;
+  display: inline-block;
+}
+.lever__part {
+  width: 9px;
+  height: 9px;
+  background-color: wheat;
+  transform: translate(2px, 9px);
+}
+
+.ventilation {
+  width: 49px;
+  height: 36px;
+  border: 3px solid #000;
+  background-color: wheat;
+  font-size: 0;
+}
+.ventilation__section {
+  width: 11px;
+  height: 25px;
+  border: 2px solid #000;
+  display: inline-block;
+  transform: translate(3px, 3px);
+}
+.ventilation__section:nth-of-type(2) {
+  transform: translate(5px, 3px);
+}
+.ventilation__section:nth-of-type(3) {
+  transform: translate(7px, 3px);
+}
+.plate {
+  background-color: wheat;
+  border: 3px solid #000;
+  width: 60px;
+  height: 29px;
+}

@@ -1,9 +1,6 @@
 @import url("fonts.css");
 @import url("reset.css");
 
-body {
-}
-
 [class*="__container"] {
   max-width: 1262px;
   margin: 0 auto;
@@ -18,14 +15,27 @@ body {
 .page {
   padding: 100px;
 }
-
+.car__gas-tank {
+  width: 20px;
+  height: 23px;
+  border: #000 3px solid;
+  border-radius: 6px;
+  background-color: wheat;
+  position: absolute;
+  top: 135px;
+  left: 107px;
+  z-index: 3;
+}
 .car {
-  padding: 50px;
+  width: 720px;
+  height: 240px;
+  border-radius: 28.8px 108px 0 0 / 112.56px 136.68px 0 0;
+  overflow: hidden;
 }
 .car__body {
   position: relative;
   background-color: wheat;
-  border-radius: 4% 15% 5% 5% / 56% 68% 32% 44%;
+  border-radius: 28.8px 108px 36px 30px / 112.56px 136.68px 64.32px 50px;
   border: black solid 5px;
   width: 720px;
   height: 201px;
@@ -53,7 +63,7 @@ body {
   height: 40px;
   position: absolute;
   bottom: -44.5px;
-  width: 710px;
+  width: 720px;
 }
 
 .windows {
@@ -62,63 +72,77 @@ body {
 .windows * {
   margin-right: 20px;
 }
-.window {
+.car__window {
   background-color: black;
   border-radius: 10px;
-  display: inline-block;
+  position: absolute;
+  top: 33px;
 }
 
-.windows__front {
+.car__window--front {
   width: 76.044px;
   height: 13.519px;
-  transform: rotate(54.967deg);
+  right: -2px;
+  transform: rotate(50.967deg);
   border-radius: 0px 0px 228px 228px;
-}
-.windows__front-side {
-  width: 64px;
-  height: 61px;
-  border-radius: 10px 0px 0px 10px;
 }
 .window-front-side {
   position: relative;
 }
-.window-front-side__cut {
+.windows__door-left {
+}
+.windows__back {
+}
+.car__window--side {
+  right: 60px;
+  width: 64px;
+  height: 61px;
+  border-radius: 10px 0px 0px 10px;
+}
+.car__side-window-cut {
   position: absolute;
   top: -10px;
   left: 80%;
   width: 18px;
   height: 40px;
   transform: rotate(-34.495deg);
-  background-color: white;
+  background-color: wheat;
 }
-.windows__door-right {
+
+.car__window--door-right {
+  right: 139px;
   width: 75px;
   height: 60px;
 }
-.windows__door-left {
+.car__window--door-left {
+  right: 297px;
   width: 78px;
   height: 44px;
 }
-.windows__back {
+.car__window--back {
   width: 127px;
   height: 60px;
+  left: 23px;
 }
-
 .door {
   width: 56px;
   height: 158px;
   border: #000 solid 3px;
   border-radius: 11px;
   background-color: wheat;
-  display: inline-block;
+  position: absolute;
+  top: 30px;
+  right: 227px;
+  z-index: 3;
 }
 .door__window {
+  background-color: black;
+  border-radius: 10px;
   width: 42px;
   height: 57px;
   transform: translate(4px, 4px);
 }
-.window {
-}
+
 .door__bullets {
   width: 29px;
   height: 22px;
@@ -151,6 +175,11 @@ body {
 }
 
 .deco-lines {
+  position: absolute;
+  width: 100%;
+  bottom: 45px;
+  left: 0;
+  z-index: 3;
 }
 .deco-lines__item {
   height: 7px;
@@ -169,12 +198,12 @@ body {
 }
 
 .wheel {
-  position: relative;
-  height: 77px;
+  position: absolute;
+  height: 68px;
 }
 .wheel__circle {
-  width: 77px;
-  height: 77px;
+  width: 68px;
+  height: 68px;
   border-radius: 50%;
   position: absolute;
 }
@@ -190,26 +219,24 @@ body {
   transform: scale(0.3);
 }
 
-.conditioner {
-  border-radius: 0% 19% 5% 95% / 100% 63% 37% 0%;
-  border: #000 3px solid;
-  background-color: wheat;
-  width: 72px;
-  height: 25px;
-  display: inline-block;
+.car__wheel {
+  position: absolute;
+  top: 158px;
 }
-.gas-tank {
-  width: 20px;
-  height: 23px;
-  border: #000 3px solid;
-  border-radius: 6px;
-  background-color: wheat;
+.car__wheel--front {
+  right: 132px;
 }
+.car__wheel--back {
+  left: 233px;
+}
+
 .lever {
   width: 13px;
   height: 20px;
   background-color: #000;
-  display: inline-block;
+  position: absolute;
+  top: 95px;
+  right: 286px;
 }
 .lever__part {
   width: 9px;
@@ -217,7 +244,12 @@ body {
   background-color: wheat;
   transform: translate(2px, 9px);
 }
-
+.car__ventilation {
+  position: absolute;
+  top: 93px;
+  left: 253px;
+  z-index: 4;
+}
 .ventilation {
   width: 49px;
   height: 36px;
@@ -238,9 +270,12 @@ body {
 .ventilation__section:nth-of-type(3) {
   transform: translate(7px, 3px);
 }
-.plate {
+.car__plate {
   background-color: wheat;
   border: 3px solid #000;
   width: 60px;
   height: 29px;
+  position: absolute;
+  bottom: 3px;
+  left: 21px;
 }

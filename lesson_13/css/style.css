@@ -15,7 +15,7 @@
 .page {
   padding: 100px;
 }
-.car__gas-tank {
+.camper__gas-tank {
   width: 20px;
   height: 23px;
   border: #000 3px solid;
@@ -26,13 +26,13 @@
   left: 107px;
   z-index: 3;
 }
-.car {
+.camper {
   width: 720px;
   height: 240px;
   border-radius: 28.8px 108px 0 0 / 112.56px 136.68px 0 0;
   overflow: hidden;
 }
-.car__body {
+.camper__body {
   position: relative;
   background-color: wheat;
   border-radius: 28.8px 108px 36px 30px / 112.56px 136.68px 64.32px 50px;
@@ -72,14 +72,14 @@
 .windows * {
   margin-right: 20px;
 }
-.car__window {
+.camper__window {
   background-color: black;
   border-radius: 10px;
   position: absolute;
   top: 33px;
 }
 
-.car__window--front {
+.camper__window--front {
   width: 76.044px;
   height: 13.519px;
   right: -2px;
@@ -89,17 +89,13 @@
 .window-front-side {
   position: relative;
 }
-.windows__door-left {
-}
-.windows__back {
-}
-.car__window--side {
+.camper__window--side {
   right: 60px;
   width: 64px;
   height: 61px;
   border-radius: 10px 0px 0px 10px;
 }
-.car__side-window-cut {
+.camper__side-window-cut {
   position: absolute;
   top: -10px;
   left: 80%;
@@ -109,17 +105,17 @@
   background-color: wheat;
 }
 
-.car__window--door-right {
+.camper__window--door-right {
   right: 139px;
   width: 75px;
   height: 60px;
 }
-.car__window--door-left {
+.camper__window--door-left {
   right: 297px;
   width: 78px;
   height: 44px;
 }
-.car__window--back {
+.camper__window--back {
   width: 127px;
   height: 60px;
   left: 23px;
@@ -199,11 +195,11 @@
 
 .wheel {
   position: absolute;
-  height: 68px;
+  height: 64px;
 }
 .wheel__circle {
-  width: 68px;
-  height: 68px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   position: absolute;
 }
@@ -219,15 +215,15 @@
   transform: scale(0.3);
 }
 
-.car__wheel {
+.camper__wheel {
   position: absolute;
   top: 158px;
 }
-.car__wheel--front {
-  right: 132px;
+.camper__wheel--front {
+  right: 131px;
 }
-.car__wheel--back {
-  left: 233px;
+.camper__wheel--back {
+  left: 235px;
 }
 
 .lever {
@@ -244,7 +240,7 @@
   background-color: wheat;
   transform: translate(2px, 9px);
 }
-.car__ventilation {
+.camper__ventilation {
   position: absolute;
   top: 93px;
   left: 253px;
@@ -270,7 +266,7 @@
 .ventilation__section:nth-of-type(3) {
   transform: translate(7px, 3px);
 }
-.car__plate {
+.camper__plate {
   background-color: wheat;
   border: 3px solid #000;
   width: 60px;

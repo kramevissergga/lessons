@@ -1,0 +1,17 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+}
+
+[class*="__container"] {
+  max-width: 1262px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+}

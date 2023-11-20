@@ -146,15 +146,18 @@ body {
   background-image: url("../img/men-1.webp");
   animation: men1-show forwards linear 1s 20s, entity-remove 0s forwards 26s;
 }
+
 .action__men-2 {
   background-image: url("../img/men-2.webp");
   animation: men2-show forwards linear 1s 31s, entity-remove forwards 0s 33.5s;
 }
+
 .action__men-3 {
   width: 40%;
   background-image: url("../img/freddy.webp");
   animation: men3-show forwards linear 2s 38s;
 }
+
 .action__lightning {
   background-image: url("../img/lightning.webp");
   background-size: cover;

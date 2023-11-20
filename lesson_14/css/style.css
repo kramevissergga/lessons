@@ -211,82 +211,82 @@ body {
 }
 
 @keyframes blonde-first-show {
-  from {
+  0% {
     left: 100%;
   }
-  to {
+  100% {
     left: 0;
   }
 }
 @keyframes brunette-first-show {
-  from {
+  0% {
     left: 100%;
   }
-  to {
+  100% {
     left: 10%;
   }
 }
 @keyframes ginger-first-show {
-  from {
+  0% {
     left: 100%;
   }
-  to {
+  100% {
     left: 20%;
   }
 }
 
 @keyframes apostle-show {
-  to {
+  100% {
     left: 70%;
   }
 }
 
 @keyframes duck-jumping {
-  to {
+  100% {
     bottom: 10%;
   }
 }
 
 @keyframes duck-first-run {
-  to {
+  100% {
     left: -20%;
   }
 }
 
 @keyframes duck-blonde-run {
-  from {
+  0% {
     right: 100%;
   }
-  to {
+  100% {
     right: 40%;
   }
 }
 @keyframes duck-brunette-run {
-  from {
+  0% {
     right: 100%;
   }
-  to {
+  100% {
     right: 55%;
   }
 }
 
 @keyframes duck-ginger-run {
-  from {
+  0% {
     right: 100%;
   }
-  to {
+  100% {
     right: -20%;
   }
 }
 
 @keyframes duck-explosion {
-  to {
+  100% {
     bottom: 0;
     background-image: url("../img/explosion.gif");
   }
 }
 @keyframes duck-crushing {
-  to {
+  100% {
     bottom: 0;
     transform: scaleY(0.2);
   }
@@ -308,13 +308,13 @@ body {
 }
 
 @keyframes blonde-walking-plot {
-  to {
+  100% {
     left: 40%;
   }
 }
 
 @keyframes brunette-walking-plot {
-  to {
+  100% {
     left: 55%;
   }
 }
@@ -348,7 +348,7 @@ body {
 }
 
 @keyframes brunette-fall {
-  to {
+  100% {
     transform: rotate(-90deg);
   }
 }
@@ -370,45 +370,45 @@ body {
   }
 }
 @keyframes set-blonde-walking-image {
-  to {
+  100% {
     background-image: url("../img/blonde-walking.webp");
   }
 }
 
 @keyframes set-blonde-standing-image {
-  to {
+  100% {
     background-image: url("../img/blonde-standing.webp");
   }
 }
 @keyframes set-brunette-walking-image {
-  to {
+  100% {
     background-image: url("../img/brunette-walking.webp");
   }
 }
 
 @keyframes set-brunette-standing-image {
-  to {
+  100% {
     background-image: url("../img/brunette-standing.webp");
   }
 }
 @keyframes set-ginger-walking-image {
-  to {
+  100% {
     background-image: url("../img/ginger-walking.webp");
   }
 }
 
 @keyframes set-ginger-standing-image {
-  to {
+  100% {
     background-image: url("../img/ginger-standing.webp");
   }
 }
 @keyframes monster-zoom {
-  from {
+  0% {
     transform: scale(1);
     top: 0;
     left: 0;
   }
-  to {
+  100% {
     transform: scale(10);
     top: 40%;
     left: 50%;
@@ -455,22 +455,22 @@ body {
 }
 
 @keyframes entity-remove {
-  to {
+  100% {
     display: none;
   }
 }
 @keyframes set-background-forest {
-  to {
+  100% {
     background-image: url("../img/heaven-forest.webp");
   }
 }
 @keyframes set-background-road {
-  to {
+  100% {
     background-image: url("../img/heaven-road.webp");
   }
 }
 @keyframes set-background-tree {
-  to {
+  100% {
     background-image: url("../img/heaven-tree.webp");
   }
 }

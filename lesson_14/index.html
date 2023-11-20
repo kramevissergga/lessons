@@ -15,14 +15,44 @@
     </header>
     <main class="page">
       <div class="action">
+        <div id="curtain" class="action__curtain">
+          <button id="play-button" onclick="playAudioAndAnimations()" class="action__play-button">PLAY</button>
+        </div>
         <div class="action__monster action__entity"></div>
         <div class="action__blonde action__entity"></div>
         <div class="action__brunette action__entity"></div>
         <div class="action__ginger action__entity"></div>
         <div class="action__apostle action__entity"></div>
         <div class="action__lightning action__entity"></div>
-        <div class="action__duck action__entity"></div>
+        <div class="action__men-1 action__entity"></div>
+        <div class="action__men-2 action__entity"></div>
+        <div class="action__men-3 action__entity"></div>
+        <div class="action__duck action__duck--start action__entity"></div>
+        <div class="action__duck action__duck--blonde action__entity"></div>
+        <div class="action__duck action__duck--brunette action__entity"></div>
+        <div class="action__duck action__duck--ginger action__entity"></div>
       </div>
+      <audio id="story">
+        <source src="audio/story.mp3" type="audio/mp3">
+      </audio>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var curtain = document.getElementById("curtain");
+          var playButton = document.getElementById("play-button");
+          var storyAudio = document.getElementById("story");
+          var actionContainer = document.querySelector(".action");
+
+          playButton.addEventListener("click", function () {
+            playAudioAndAnimations();
+          });
+
+          function playAudioAndAnimations() {
+            storyAudio.play();
+            actionContainer.classList.add("action--animated");
+            curtain.style.visibility = "hidden";
+          }
+        });
+      </script>
     </main>
     <footer class="footer">
       The footer is not yet implemented.

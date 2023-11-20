@@ -40,13 +40,12 @@ body {
   background-color: #2f4f4fcc;
   z-index: 3;
 }
-.action__play-button {
+
+.action__play-button,
+.action__show-translate {
   position: absolute;
   padding: 20px;
-  top: 50%;
-  left: 50%;
   background-color: blueviolet;
-  text-transform: capitalize;
   transition: background-color 0.2s;
   cursor: pointer;
   font-size: 16px;
@@ -54,8 +53,30 @@ body {
   border-radius: 10px;
   color: aliceblue;
 }
-.action__play-button:hover {
+.action__show-translate {
+  top: 5%;
+  left: 5%;
+}
+.action__play-button {
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+}
+
+.action__translate {
+  font-size: 16px;
+  color: aliceblue;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+}
+.action__play-button:hover,
+.action__show-translate:hover {
   background-color: rgb(108, 34, 178);
+}
+.action__show-translate:hover .action__translate,
+.action__translate:hover {
+  visibility: visible;
 }
 .action__entity {
   animation: none;

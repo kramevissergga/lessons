@@ -102,7 +102,7 @@ body {
     blonde-walking-moves alternate linear 0.5s 4 14s,
     set-blonde-walking-image 0s forwards 14s,
     blonde-walking-plot linear 2s forwards 14s,
-    set-blonde-standing-image 0s forwards 16s, entity-remove 0s forwards 26s;
+    set-blonde-standing-image 0s forwards 16s, entity-hide 0s forwards 26s;
 }
 .action__brunette {
   transform-origin: center 90%;
@@ -113,8 +113,7 @@ body {
     set-brunette-walking-image 0s forwards 27.3s,
     brunette-walking-plot linear 2s forwards 27.3s,
     brunette-fall linear 0.2s alternate 2 29.3s,
-    set-brunette-standing-image 0s forwards 29.4s,
-    entity-remove forwards 0s 33.5s;
+    set-brunette-standing-image 0s forwards 29.4s, entity-hide forwards 0s 33.5s;
 }
 .action__ginger {
   background-image: url("../img/ginger-start.webp");
@@ -131,7 +130,7 @@ body {
   background-image: url("../img/apostle.webp");
   left: 100%;
   bottom: 0;
-  animation: apostle-show 1s linear forwards 2s, entity-remove forwards 0s 13.5s;
+  animation: apostle-show 1s linear forwards 2s, entity-hide forwards 0s 13.5s;
 }
 .action__men-1,
 .action__men-2,
@@ -144,12 +143,12 @@ body {
 .action__men-1 {
   transform-origin: center 90%;
   background-image: url("../img/men-1.webp");
-  animation: men1-show forwards linear 1s 20s, entity-remove 0s forwards 26s;
+  animation: men1-show forwards linear 1s 20s, entity-hide 0s forwards 26s;
 }
 
 .action__men-2 {
   background-image: url("../img/men-2.webp");
-  animation: men2-show forwards linear 1s 31s, entity-remove forwards 0s 33.5s;
+  animation: men2-show forwards linear 1s 31s, entity-hide forwards 0s 33.5s;
 }
 
 .action__men-3 {
@@ -166,7 +165,7 @@ body {
   visibility: hidden;
   left: 75%;
   top: -4%;
-  animation: lightning-strike 0.5s 12.5s, entity-remove forwards 0s 13s;
+  animation: lightning-strike 0.5s 12.5s, entity-hide forwards 0s 13s;
 }
 .action__duck {
   height: 20%;
@@ -179,19 +178,19 @@ body {
 .action__duck--start {
   left: 100%;
   animation: duck-jumping infinite 0.07s alternate 8s,
-    duck-first-run forwards 2s linear 8s, entity-remove forwards 0s 10s;
+    duck-first-run forwards 2s linear 8s, entity-hide forwards 0s 10s;
 }
 .action__duck--blonde {
   right: 100%;
   animation: duck-jumping infinite 0.07s alternate 14s,
     duck-blonde-run forwards 2s linear 14s, duck-explosion forwards 0s 16s,
-    entity-remove forwards 0s 18s;
+    entity-hide forwards 0s 18s;
 }
 .action__duck--brunette {
   right: 100%;
   animation: duck-jumping infinite 0.07s alternate 27.3s,
     duck-brunette-run forwards 2s linear 27.3s,
-    duck-crushing forwards 0.2s 29.3s, entity-remove forwards 0s 32s;
+    duck-crushing forwards 0.2s 29.3s, entity-hide forwards 0s 32s;
 }
 .action__duck--ginger {
   right: 100%;
@@ -454,9 +453,9 @@ body {
   }
 }
 
-@keyframes entity-remove {
+@keyframes entity-hide {
   100% {
-    display: none;
+    visibility: hidden;
   }
 }
 @keyframes set-background-forest {

@@ -116,6 +116,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 99;
+  border-bottom: #bebcbd 1px solid;
 }
 
 .header__menu {

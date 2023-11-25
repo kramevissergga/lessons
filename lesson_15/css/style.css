@@ -337,10 +337,7 @@ body {
   flex-direction: column;
   row-gap: 88px;
 }
-.orders__item {
-}
-.order {
-}
+
 .order__info:not(:last-child) {
   margin-bottom: 61px;
 }

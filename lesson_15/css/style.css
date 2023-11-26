@@ -335,7 +335,7 @@ body {
 .orders__list {
   display: flex;
   flex-direction: column;
-  row-gap: 88px;
+  row-gap: 30px;
 }
 
 .order__info:not(:last-child) {

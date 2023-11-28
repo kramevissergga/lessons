@@ -130,6 +130,7 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  padding: 8px;
   gap: 12px;
   border-radius: 8px;
   background: #8a33fd;
@@ -190,13 +191,16 @@ body {
 .categories__cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  margin: 0 -25px;
+  row-gap: 25px;
 }
-
 .product-card {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
+  padding: 0 25px;
+}
+.product-card__content {
   max-width: 270px;
 }
 .link-image {
@@ -274,7 +278,6 @@ body {
   display: flex;
   column-gap: 50px;
   row-gap: 30px;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 30px;
@@ -388,7 +391,6 @@ body {
   justify-content: space-between;
   row-gap: 20px;
   column-gap: 50px;
-  flex-wrap: wrap;
   padding-bottom: 30px;
   border-bottom: #edeef2 solid 1px;
 }

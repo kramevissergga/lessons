@@ -16,56 +16,66 @@
     <main class="page">
       <div class="page__container">
         <div class="my-info">
-
           <h2 class="my-info__title title">My Info</h2>
-          <h3 class="my-info__subtitle title">Add Address</h3>
-
-          <form action="#" enctype="multipart/form-data" class="my-info__form form" method="POST">
+          <fieldset class="my-info__address address">
+            <legend class="address__legend legend">Add Address</legend>
+          </fieldset>
+          <form action="#" enctype="multipart/form-data" class="address__form form" method="POST">
             <div class="form__inputs">
               <div class="form__item">
                 <label for="firstName" class="form__label">First Name*</label>
                 <input type="text" required id="firstName" name="firstName" placeholder="First Name"
-                  class="form__input">
+                  class="form__input input">
               </div>
               <div class="form__item">
                 <label for="lastName" class="form__label">Last Name*</label>
-                <input type="text" placeholder="Last Name" required name="lastName" id="lastName" class="form__input">
+                <input type="text" placeholder="Last Name" required name="lastName" id="lastName"
+                  class="form__input input">
               </div>
               <div class="form__item">
                 <label for="region" class="form__label">Country / Region*</label>
                 <input type="text" placeholder="Country / Region" required name="region" id="region"
-                  class="form__input">
+                  class="form__input input">
               </div>
               <div class="form__item">
                 <label for="company" class="form__label">Company Name</label>
-                <input type="text" placeholder="Company (optional)" name="company" id="company" class="form__input">
+                <input type="text" placeholder="Company (optional)" name="company" id="company"
+                  class="form__input input">
               </div>
               <div class="form__item">
                 <label for="street" class="form__label">Street Address*</label>
                 <input type="text" placeholder="House number and street name" required name="street" id="street"
-                  class="form__input">
+                  class="form__input input">
               </div>
               <div class="form__item">
                 <label for="apt" class="form__label">Apt, suite, unit</label>
                 <input placeholder="apartment, suite, unit, etc. (optional)" type="text" name="apt" id="apt"
-                  class="form__input">
+                  class="form__input input">
               </div>
               <div class="form__item">
                 <label for="city" class="form__label">City*</label>
-                <input placeholder="Town / City" type="text" required name="city" id="city" class="form__input">
+                <input placeholder="Town / City" type="text" required name="city" id="city" class="form__input input">
               </div>
               <div class="form__item">
                 <label for="state" class="form__label">State*</label>
-                <input type="text" placeholder="State" required name="state" id="state" class="form__input">
+                <div class="select">
+                  <label for="state" class="select__arrow"></label>
+                  <input id="state" type="text" readonly placeholder="State" required class="select__input input">
+                  <ul class="select__options">
+                    <li class="select__option">Закарпаття</li>
+                    <li class="select__option">Львівщина</li>
+                    <li class="select__option">Тернопільщина</li>
+                  </ul>
+                </div>
               </div>
               <div class="form__item">
                 <label for="phone" class="form__label">Phone*</label>
-                <input type="tel" placeholder="Phone" required name="phone" id="phone" class="form__input">
+                <input type="tel" placeholder="Phone" required name="phone" id="phone" class="form__input input">
               </div>
               <div class="form__item">
                 <label for="postalCode" class="form__label">Postal Code*</label>
                 <input type="text" placeholder="Postal Code" required name="postalCode" id="postalCode"
-                  class="form__input">
+                  class="form__input input">
               </div>
               <div class="form__item">
                 <label for="deliveryInstruction" class="form__label">Delivery Instruction</label>
@@ -76,10 +86,12 @@
             <div class="form__checkboxes">
               <div class="form__checkbox checkbox">
                 <input class="checkbox__input" type="checkbox" name="defaultShipping" id="defaultShipping">
+                <div class="checkbox__marker"></div>
                 <label class="checkbox__label" for="defaultShipping">Set as default shipping address</label>
               </div>
               <div class="form__checkbox checkbox">
                 <input class="checkbox__input" type="checkbox" name="defaultBilling" id="defaultBilling">
+                <div class="checkbox__marker"></div>
                 <label class="checkbox__label" for="defaultBilling">Set as default billing address</label>
               </div>
             </div>
@@ -95,6 +107,15 @@
       The footer is not yet implemented.
     </footer>
   </div>
+  <script>
+    var options = document.querySelectorAll('.select__option');
+    var input = document.getElementById('state');
+    options.forEach(function (option) {
+      option.addEventListener('click', function () {
+        input.value = option.textContent;
+      });
+    });
+  </script>
 </body>
 
 </html>

@@ -9,7 +9,6 @@
 *::before,
 *::after {
   display: inline-block;
-  content: "";
 }
 a {
   text-decoration: none;

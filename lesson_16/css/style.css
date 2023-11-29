@@ -2,10 +2,13 @@
 @import url("reset.css");
 
 body {
+  line-height: 1.2;
+  font-size: 16px;
+  font-family: Causten, sans-serif;
 }
 
 [class*="__container"] {
-  max-width: 1262px;
+  max-width: 925px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -19,4 +22,85 @@ body {
 }
 .page {
   flex-grow: 1;
+}
+
+.page__container {
+}
+.my-info {
+}
+.my-info__title {
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: 0.56px;
+  margin-bottom: 20px;
+}
+.title {
+  color: #3c4242;
+  font-family: Core Sans C, sans-serif;
+  font-weight: 600;
+}
+.my-info__subtitle {
+  font-size: 22px;
+  letter-spacing: 0.44px;
+  margin-bottom: 50px;
+}
+.my-info__form {
+}
+.form {
+}
+.form__inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  row-gap: 31px;
+  flex-wrap: wrap;
+}
+.form__item {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 426px;
+}
+.form__label {
+  color: #3c4242;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.36px;
+}
+.form__input {
+  width: 100%;
+  flex: 0 0 55px;
+  padding: 0 22px;
+  border: transparent 3px solid;
+  border-radius: 8px;
+  transition: border 0.2s;
+  background-color: #f6f6f6;
+}
+.form__input::placeholder {
+  color: #807d7e;
+}
+.form__input:focus {
+  outline: none;
+  border-color: #8a33fd;
+}
+.form__textarea {
+}
+.form__checkboxes {
+}
+.form__checkbox {
+}
+.checkbox {
+}
+.checkbox__input {
+}
+.checkbox__label {
+}
+.form__buttons {
+}
+.form__submit {
+}
+.button {
+}
+.form__reset {
+}
+.button--gray {
 }

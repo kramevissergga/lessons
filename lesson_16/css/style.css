@@ -25,15 +25,13 @@ body {
 }
 
 .page__container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 .my-info {
 }
-.my-info__title {
-  font-size: 28px;
-  line-height: 1.2;
-  letter-spacing: 0.56px;
-  margin-bottom: 20px;
-}
+
 .title,
 .legend {
   color: #3c4242;
@@ -41,19 +39,41 @@ body {
   font-weight: 600;
   text-transform: capitalize;
 }
-.address {
+.title--decorated {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+.title--decorated::before {
+  content: "";
+  width: 6px;
+  height: 30px;
+  border-radius: 10px;
+  background: #8a33fd;
+  flex-shrink: 0;
+}
+.my-info__title {
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: 0.56px;
+  margin-bottom: 20px;
+}
+.check-out__title {
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: 0.56px;
+  margin-bottom: 20px;
+}
+
+.check-out__billing,
+.my-info__address {
   padding-top: 50px;
 }
-.my-info__address {
-}
-.address__legend {
+.fieldset__legend {
   font-size: 22px;
   letter-spacing: 0.44px;
 }
-.address__form {
-}
-.form {
-}
+
 .form__inputs {
   display: flex;
   justify-content: space-between;
@@ -66,7 +86,10 @@ body {
   display: flex;
   row-gap: 10px;
   flex-direction: column;
-  flex: 1 1 426px;
+  flex: 1 1 382px;
+}
+.form__item--short {
+  flex: 0 1 246px;
 }
 .form__label {
   color: #3c4242;
@@ -108,6 +131,8 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 19px;
+}
+.form__checkboxes:not(:last-child) {
   margin-bottom: 58px;
 }
 .form__checkbox {
@@ -144,6 +169,9 @@ body {
   display: flex;
   gap: 30px;
 }
+.form__buttons:not(:last-child) {
+  margin-bottom: 20px;
+}
 .form__submit {
 }
 .button {
@@ -177,7 +205,10 @@ body {
 .button--gray:active {
   background-color: #a8a7a7;
 }
-
+.button--tiny-text {
+  font-size: 18px;
+  font-weight: 500;
+}
 .select {
   flex: 0 0 55px;
   position: relative;
@@ -233,4 +264,67 @@ body {
 }
 .select__options--hidden {
   visibility: hidden;
+}
+.check-out__billing {
+  max-width: 801px;
+  padding-bottom: 32px;
+  border-bottom: 1px #edeef2 solid;
+}
+.check-out__billing:not(:last-child) {
+  margin-bottom: 30px;
+}
+.fieldset__form {
+}
+.form-shipping-address {
+  padding-top: 8px;
+}
+.check-out__details-field {
+  padding: 30px 0;
+}
+.check-out__details-field:not(:last-child) {
+  border-bottom: 1px #bebcbd solid;
+  margin-bottom: 30px;
+}
+.form-shipping-address__desc {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.gray-card {
+  border-radius: 12px;
+  background: #f6f6f6;
+  padding: 13px 28px;
+}
+.gray-card__item {
+  padding: 25px 0;
+  display: flex;
+  column-gap: 19px;
+  position: relative;
+}
+.gray-card__item:not(:last-child) {
+  border-bottom: 1px #bebcbd solid;
+}
+.radio__input {
+  width: 18px;
+  height: 18px;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  cursor: pointer;
+  flex: 0 0 18px;
+}
+.radio__label {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.radio__marker {
+  width: 18px;
+  height: 18px;
+  background: url("../img/radio-button.svg") no-repeat center / cover;
+  flex: 0 0 18px;
+}
+.radio__input:checked + .radio__marker {
+  background-image: url("../img/radio-button-checked.svg");
 }

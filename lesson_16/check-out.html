@@ -15,11 +15,12 @@
     </header>
     <main class="page">
       <div class="page__container">
-        <div class="my-info">
-          <h2 class="my-info__title title">My Info</h2>
-          <fieldset class="my-info__address fieldset">
-            <legend class="fieldset__legend legend">Add Address</legend>
-            <form action="#" enctype="multipart/form-data" class="fieldset__form form" method="POST">
+        <div class="check-out">
+          <h3 class="check-out__title title title--decorated">Check Out
+          </h3>
+          <fieldset class="check-out__billing fieldset">
+            <legend class="fieldset__legend legend">Billing Details</legend>
+            <form action="#" enctype="multipart/form-data" class="address__form form" method="POST">
               <div class="form__inputs">
                 <div class="form__item">
                   <label for="firstName" class="form__label">First Name*</label>
@@ -51,11 +52,11 @@
                   <input placeholder="apartment, suite, unit, etc. (optional)" type="text" name="apt" id="apt"
                     class="form__input input">
                 </div>
-                <div class="form__item">
+                <div class="form__item form__item--short">
                   <label for="city" class="form__label">City*</label>
                   <input placeholder="Town / City" type="text" required name="city" id="city" class="form__input input">
                 </div>
-                <div class="form__item">
+                <div class="form__item form__item--short">
                   <label for="state" class="form__label">State*</label>
                   <div class="select">
                     <label for="state" class="select__arrow"></label>
@@ -67,41 +68,67 @@
                     </ul>
                   </div>
                 </div>
-                <div class="form__item">
-                  <label for="phone" class="form__label">Phone*</label>
-                  <input type="tel" placeholder="Phone" required name="phone" id="phone" class="form__input input">
-                </div>
-                <div class="form__item">
+                <div class="form__item form__item--short">
                   <label for="postalCode" class="form__label">Postal Code*</label>
                   <input type="text" placeholder="Postal Code" required name="postalCode" id="postalCode"
                     class="form__input input">
                 </div>
                 <div class="form__item">
-                  <label for="deliveryInstruction" class="form__label">Delivery Instruction</label>
-                  <textarea placeholder="Delivery Instruction" name="deliveryInstruction" id="deliveryInstruction"
-                    class="form__textarea"></textarea>
+                  <label for="phone" class="form__label">Phone*</label>
+                  <input type="tel" placeholder="Phone" required name="phone" id="phone" class="form__input input">
                 </div>
+              </div>
+              <div class="form__buttons">
+                <button type="submit" class="form__submit button button--tiny-text">Continue to delivery</button>
               </div>
               <div class="form__checkboxes">
                 <div class="form__checkbox checkbox">
                   <input class="checkbox__input" type="checkbox" name="defaultShipping" id="defaultShipping">
                   <div class="checkbox__marker"></div>
-                  <label class="checkbox__label" for="defaultShipping">Set as default shipping address</label>
-                </div>
-                <div class="form__checkbox checkbox">
-                  <input class="checkbox__input" type="checkbox" name="defaultBilling" id="defaultBilling">
-                  <div class="checkbox__marker"></div>
-                  <label class="checkbox__label" for="defaultBilling">Set as default billing address</label>
+                  <label class="checkbox__label" for="defaultShipping">Save my information for a faster checkout</label>
                 </div>
               </div>
-              <div class="form__buttons">
-                <button type="submit" class="form__submit button">Save</button>
-                <button type="reset" class="form__reset button button--gray">Cancel</button>
+
+            </form>
+          </fieldset>
+          <fieldset class="check-out__details-field fieldset">
+            <legend class="fieldset__legend legend">Shipping Address</legend>
+            <form class="fieldset__form form-shipping-address" action="#" enctype="multipart/form-data">
+              <div class="form-shipping-address__item">
+                <div class="form-shipping-address__desc">
+                  <p>Select the address that matches your card or payment method.</p>
+                </div>
+                <div class="form-shipping-address__radio gray-card">
+                  <div class="gray-card__item radio">
+                    <input type="radio" id="same-address-radio" class="radio__input" name="address" value="Same">
+                    <div class="radio__marker"></div>
+                    <label for="same-address-radio" class="radio__label">Same as Billing address</label>
+                  </div>
+                  <div class="gray-card__item radio">
+                    <input type="radio" id="dif-address-radio" class="radio__input" name="address" value="Dif">
+                    <div class="radio__marker"></div>
+                    <label for="dif-address-radio" class="radio__label">Use a different shipping address</label>
+                  </div>
+                </div>
               </div>
             </form>
           </fieldset>
+          <fieldset class="check-out__details-field fieldset">
+            <legend class="fieldset__legend legend">Shipping Address</legend>
+            <div class="form-shipping-address__item">
+              <div class="form-shipping-method__radio gray-card">
+                <div class="grey-card__item">
+                  <div class="shipping__date">
+                    <p>Arrives by Monday, June 7</p>
+                  </div>
+                </div>
+                <div class="grey-card__item">
+
+                </div>
+              </div>
+            </div>
+          </fieldset>
         </div>
-        <a href="check-out.html" class="page__link button">Next Page</a>
       </div>
     </main>
     <footer class="footer">

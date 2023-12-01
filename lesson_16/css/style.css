@@ -2,9 +2,9 @@
 @import url("reset.css");
 
 body {
-  line-height: 1.2;
   font-size: 16px;
   font-family: Causten, sans-serif;
+  line-height: 1.2;
 }
 
 [class*="__container"] {
@@ -54,13 +54,11 @@ body {
 }
 .my-info__title {
   font-size: 28px;
-  line-height: 1.2;
   letter-spacing: 0.56px;
   margin-bottom: 20px;
 }
 .check-out__title {
   font-size: 28px;
-  line-height: 1.2;
   letter-spacing: 0.56px;
   margin-bottom: 20px;
 }
@@ -182,7 +180,6 @@ body {
   text-align: center;
   font-size: 20px;
   font-weight: 600;
-  line-height: 1.2;
 }
 .button:hover {
   background-color: #6620c1;
@@ -275,11 +272,14 @@ body {
 }
 .fieldset__form {
 }
+.check-out__details-field--address .fieldset__legend {
+  margin-bottom: 8px;
+}
 .form-shipping-address {
   padding-top: 8px;
 }
 .check-out__details-field {
-  padding: 30px 0;
+  padding-bottom: 30px;
 }
 .check-out__details-field:not(:last-child) {
   border-bottom: 1px #bebcbd solid;
@@ -327,4 +327,33 @@ body {
 }
 .radio__input:checked + .radio__marker {
   background-image: url("../img/radio-button-checked.svg");
+}
+.shipping-date {
+  font-size: 20px;
+  font-weight: 700;
+}
+.delivery-charges {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+.delivery-charges__title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.delivery-charges__sub-text {
+  color: #807d7e;
+  font-size: 16px;
+  font-weight: 500;
+}
+.delivery-charges__price {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.check-out__details-field--method .fieldset__legend {
+  margin-bottom: 30px;
 }

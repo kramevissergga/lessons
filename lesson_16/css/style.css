@@ -288,13 +288,13 @@ body {
 .gray-card {
   border-radius: 12px;
   background: #f6f6f6;
-  padding: 13px 28px;
+  padding: 30px 28px;
 }
-.gray-card__item {
-  padding: 25px 0;
-}
+
 .gray-card__item:not(:last-child) {
   border-bottom: 1px #bebcbd solid;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 .radio {
   display: flex;
@@ -329,6 +329,9 @@ body {
 .radio__input:checked + .radio__marker {
   background-image: url("../img/radio-button-checked.svg");
 }
+.radio__body > *:not(:last-child) {
+  margin-bottom: 5px;
+}
 .delivery-charges {
   display: flex;
   justify-content: space-between;
@@ -350,4 +353,56 @@ body {
 
 .fieldset__legend--big-margin {
   margin-bottom: 30px;
+}
+
+.card-data {
+  padding-top: 30px;
+}
+.card-data__types {
+}
+.card-types {
+  display: flex;
+  column-gap: 20px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.card-types__item {
+  flex: 0 0 80px;
+  border-radius: 8px;
+}
+.card-types__img {
+  width: 100%;
+}
+.card-data__inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.inputs-card__item {
+  flex: 0 1 337px;
+}
+.inputs-card__item--relative {
+  position: relative;
+}
+.inputs-card__input {
+  height: 55px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #3c4242;
+}
+.card-data__value-hider {
+  position: relative;
+}
+.eye {
+  width: 20px;
+  height: 20px;
+  background: url("../img/eye.svg") no-repeat center / cover;
+  transition: background-image 0.2s;
+  position: absolute;
+  right: 20px;
+  top: 30%;
+}
+.eye:hover {
+  background-image: url("../img/eye-active.svg");
 }

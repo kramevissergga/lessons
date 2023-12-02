@@ -89,7 +89,7 @@
             </div>
           </form>
 
-          <form class="check-out__order-form form-order" action="#" enctype="multipart/form-data">
+          <form class="check-out__order-form form-order" action="#" method="POST" enctype="multipart/form-data">
             <fieldset class="form-order-field fieldset">
               <legend class="fieldset__legend title">Shipping Address</legend>
               <div class="fieldset__desc">
@@ -143,9 +143,9 @@
             <fieldset class="form-order-field fieldset">
               <legend class="fieldset__legend title">Payment Method</legend>
               <div class="fieldset__desc">
-                <p>Select the address that matches your card or payment method.</p>
+                <p>All transactions are secure and encrypted.</p>
               </div>
-              <div class="gray-card">
+              <div class="gray-card gray-card--big-padding">
                 <div class="gray-card__item">
                   <div class="radio">
                     <input type="radio" id="card-radio" class="radio__input" name="payment" value="card">
@@ -160,20 +160,36 @@
                   <div class="card-data">
                     <ul class="card-data__types card-types">
                       <li class="card-types__item">
-                        <img src="img/" alt="Payment service" class="card-types__img">
+                        <img src="img/g-pay.svg" alt="Payment service" class="card-types__img">
                       </li>
                       <li class="card-types__item">
-                        <img src="img/" alt="Payment service" class="card-types__img">
+                        <img src="img/visa.svg" alt="Payment service" class="card-types__img">
                       </li>
                       <li class="card-types__item">
-                        <img src="img/" alt="Payment service" class="card-types__img">
+                        <img src="img/paypal.svg" alt="Payment service" class="card-types__img">
                       </li>
                       <li class="card-types__item">
-                        <img src="img/" alt="Payment service" class="card-types__img">
+                        <img src="img/pay-pass.svg" alt="Payment service" class="card-types__img">
                       </li>
                     </ul>
-                    <div class="card-data__inputs">
-                      <input type="number" maxlength="20">
+                    <div class="card-data__inputs inputs-card">
+                      <div class="inputs-card__item">
+                        <input class="inputs-card__input input" type="number" placeholder="Card number" name="card-num"
+                          id="card-num" maxlength="20">
+                      </div>
+                      <div class="inputs-card__item">
+                        <input class="inputs-card__input input" type="text" placeholder="Name of card" name="card-name"
+                          id="card-name">
+                      </div>
+                      <div class="inputs-card__item">
+                        <input class="inputs-card__input input" type="text" maxlength="5"
+                          placeholder="Expiration date (MM/YY)" name="exp-date" id="exp-date">
+                      </div>
+                      <div class="inputs-card__item inputs-card__item--relative">
+                        <input type="number" class="inputs-card__input input" placeholder="Security Code"
+                          name="sec-code" id="sec-code">
+                        <button class="eye"></button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -181,7 +197,7 @@
                   <div class="radio">
                     <input type="radio" id="cash-radio" class="radio__input" name="payment" value="cash">
                     <div class="radio__marker"></div>
-                    <div class="radio__text">
+                    <div class="radio__body">
                       <label for="cash-radio" class="radio__label">Cash on delivery</label>
                       <div class="radio__text">
                         <p>Pay with cash upon delivery.</p>

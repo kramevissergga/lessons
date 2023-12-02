@@ -29,8 +29,6 @@ body {
   flex-direction: column;
   gap: 50px;
 }
-.my-info {
-}
 
 .title,
 .legend {
@@ -63,9 +61,9 @@ body {
   margin-bottom: 20px;
 }
 
-.check-out__billing,
-.my-info__address {
-  padding-top: 50px;
+.check-out__billing .fieldset__legend,
+.my-info__address .fieldset__legend {
+  margin-bottom: 50px;
 }
 .fieldset__legend {
   font-size: 22px;
@@ -170,8 +168,6 @@ body {
 .form__buttons:not(:last-child) {
   margin-bottom: 20px;
 }
-.form__submit {
-}
 .button {
   border-radius: 8px;
   background: #8a33fd;
@@ -187,8 +183,6 @@ body {
 }
 .button:active {
   background-color: #581ba7;
-}
-.form__reset {
 }
 .button--gray {
   background: #f6f6f6;
@@ -270,9 +264,8 @@ body {
 .check-out__billing:not(:last-child) {
   margin-bottom: 30px;
 }
-.fieldset__form {
-}
-.check-out__details-field--address .fieldset__legend {
+
+.fieldset__legend {
   margin-bottom: 8px;
 }
 .form-shipping-address {
@@ -297,12 +290,15 @@ body {
 }
 .gray-card__item {
   padding: 25px 0;
-  display: flex;
-  column-gap: 19px;
-  position: relative;
 }
 .gray-card__item:not(:last-child) {
   border-bottom: 1px #bebcbd solid;
+}
+.radio {
+  display: flex;
+  column-gap: 19px;
+  align-items: center;
+  position: relative;
 }
 .radio__input {
   width: 18px;
@@ -314,7 +310,10 @@ body {
   cursor: pointer;
   flex: 0 0 18px;
 }
-.radio__label {
+.radio__label,
+.shipping-date,
+.delivery-charges__price {
+  color: #3c4242;
   font-size: 20px;
   font-weight: 700;
 }
@@ -328,10 +327,6 @@ body {
 .radio__input:checked + .radio__marker {
   background-image: url("../img/radio-button-checked.svg");
 }
-.shipping-date {
-  font-size: 20px;
-  font-weight: 700;
-}
 .delivery-charges {
   display: flex;
   justify-content: space-between;
@@ -341,6 +336,7 @@ body {
 
 .delivery-charges__title {
   font-size: 20px;
+  font-family: Causten, sans-serif;
   font-weight: 700;
   margin-bottom: 8px;
 }
@@ -349,11 +345,7 @@ body {
   font-size: 16px;
   font-weight: 500;
 }
-.delivery-charges__price {
-  font-size: 20px;
-  font-weight: 700;
-}
 
-.check-out__details-field--method .fieldset__legend {
+.fieldset__legend--big-margin {
   margin-bottom: 30px;
 }

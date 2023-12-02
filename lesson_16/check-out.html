@@ -20,7 +20,7 @@
           </h3>
           <fieldset class="check-out__billing fieldset">
             <legend class="fieldset__legend legend">Billing Details</legend>
-            <form action="#" enctype="multipart/form-data" class="address__form form" method="POST">
+            <form action="#" enctype="multipart/form-data" class="form" method="POST">
               <div class="form__inputs">
                 <div class="form__item">
                   <label for="firstName" class="form__label">First Name*</label>
@@ -91,7 +91,7 @@
 
             </form>
           </fieldset>
-          <fieldset class="check-out__details-field check-out__details-field--address fieldset">
+          <fieldset class="check-out__details-field fieldset">
             <legend class="fieldset__legend legend">Shipping Address</legend>
             <form class="fieldset__form form-shipping-address" action="#" enctype="multipart/form-data">
               <div class="form-shipping-address__item">
@@ -113,31 +113,69 @@
               </div>
             </form>
           </fieldset>
-          <fieldset class="check-out__details-field check-out__details-field--method fieldset">
-            <legend class="fieldset__legend legend">Shipping Method</legend>
-            <div class="form-shipping-address__item">
-              <div class="form-shipping-method__radio gray-card">
-                <div class="gray-card__item">
-                  <div class="shipping-date">
-                    <p>Arrives by Monday, June 7</p>
-                  </div>
+          <fieldset class="check-out__details-field fieldset">
+            <legend class="fieldset__legend fieldset__legend--big-margin legend">Shipping Method</legend>
+            <div class="gray-card">
+              <div class="gray-card__item">
+                <div class="shipping-date">
+                  <p>Arrives by Monday, June 7</p>
                 </div>
-                <div class="gray-card__item">
-                  <div class="delivery-charges">
-                    <div class="delivery-charges__text">
-                      <h4 class="delivery-charges__title title">
-                        Delivery Charges
-                      </h4>
-                      <div class="delivery-charges__sub-text">
-                        <p>Additional fess may apply</p>
-                      </div>
+              </div>
+              <div class="gray-card__item">
+                <div class="delivery-charges">
+                  <div class="delivery-charges__text">
+                    <h4 class="delivery-charges__title title">
+                      Delivery Charges
+                    </h4>
+                    <div class="delivery-charges__sub-text">
+                      <p>Additional fess may apply</p>
                     </div>
-                    <div class="delivery-charges__price">$5.00</div>
                   </div>
+                  <div class="delivery-charges__price">$5.00</div>
                 </div>
               </div>
             </div>
           </fieldset>
+          <fieldset class="check-out__details-field fieldset">
+            <legend class="fieldset__legend legend">Payment Method</legend>
+            <form class="fieldset__form form-payment" action="#" enctype="multipart/form-data">
+              <div class="form-payment__desc">
+                <p>Select the address that matches your card or payment method.</p>
+              </div>
+              <div class="gray-card">
+                <div class="gray-card__item radio">
+                  <input type="radio" id="card-radio" class="radio__input" name="payment" value="card">
+                  <div class="radio__marker"></div>
+                  <div class="radio__body">
+                    <label for="card-radio" class="radio__label">Credit Card</label>
+                    <div class="radio__text">
+                      <p>We accept all major credit cards.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="gray-card__item">
+                  <div class="radio">
+                    <input type="radio" id="cash-radio" class="radio__input" name="payment" value="cash">
+                    <div class="radio__marker"></div>
+                    <div class="radio__text">
+                      <label for="card-radio" class="radio__label">Credit Card</label>
+                      <div class="radio__text">
+                        <p>We accept all major credit cards.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gray-card__item radio">
+                  <div class="radio">
+                    <input type="radio" id="paypal-radio" class="radio__input" name="payment" value="paypal">
+                    <div class="radio__marker"></div>
+                    <label for="paypal-radio" class="radio__label">Paypal</label>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </fieldset>
+
         </div>
       </div>
     </main>

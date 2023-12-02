@@ -3,7 +3,7 @@
 
 body {
   font-size: 16px;
-  font-family: Causten, sans-serif;
+  font-family: "Causten", sans-serif;
   line-height: 1.2;
 }
 
@@ -32,7 +32,7 @@ body {
 
 .title {
   color: #3c4242;
-  font-family: Core Sans C, sans-serif;
+  font-family: "Core Sans C", sans-serif;
   font-weight: 600;
   text-transform: capitalize;
 }
@@ -341,7 +341,7 @@ body {
 
 .delivery-charges__title {
   font-size: 20px;
-  font-family: Causten, sans-serif;
+  font-family: "Causten", sans-serif;
   font-weight: 700;
   margin-bottom: 8px;
 }

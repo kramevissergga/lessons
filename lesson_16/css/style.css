@@ -30,8 +30,7 @@ body {
   gap: 50px;
 }
 
-.title,
-.legend {
+.title {
   color: #3c4242;
   font-family: Core Sans C, sans-serif;
   font-weight: 600;
@@ -61,13 +60,15 @@ body {
   margin-bottom: 20px;
 }
 
-.check-out__billing .fieldset__legend,
-.my-info__address .fieldset__legend {
-  margin-bottom: 50px;
+.check-out__biling-form:not(:last-child) {
+  padding-bottom: 32px;
+  border-bottom: 1px #edeef2 solid;
+  margin-bottom: 30px;
 }
-.fieldset__legend {
+.form__title {
   font-size: 22px;
   letter-spacing: 0.44px;
+  margin-bottom: 50px;
 }
 
 .form__inputs {
@@ -256,29 +257,30 @@ body {
 .select__options--hidden {
   visibility: hidden;
 }
-.check-out__billing {
+.check-out__billing-form {
   max-width: 801px;
+}
+.check-out__billing-form:not(:last-child) {
   padding-bottom: 32px;
   border-bottom: 1px #edeef2 solid;
-}
-.check-out__billing:not(:last-child) {
   margin-bottom: 30px;
 }
 
 .fieldset__legend {
+  font-size: 22px;
   margin-bottom: 8px;
 }
 .form-shipping-address {
   padding-top: 8px;
 }
-.check-out__details-field {
+.form-order-field {
   padding-bottom: 30px;
 }
-.check-out__details-field:not(:last-child) {
+.form-order-field:not(:last-child) {
   border-bottom: 1px #bebcbd solid;
   margin-bottom: 30px;
 }
-.form-shipping-address__desc {
+.fieldset__desc {
   font-size: 16px;
   margin-bottom: 30px;
 }

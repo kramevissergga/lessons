@@ -58,13 +58,13 @@
               <div class="form__item form__item--short">
                 <label for="state" class="form__label">State*</label>
                 <div class="select">
-                  <label for="state" class="select__arrow"></label>
-                  <input id="state" type="text" placeholder="State" required class="select__input input">
-                  <ul class="select__options">
-                    <li class="select__option">Закарпаття</li>
-                    <li class="select__option">Львівщина</li>
-                    <li class="select__option">Тернопільщина</li>
-                  </ul>
+                  <select class="select__input input" name="state" id="state">
+                    <option selected disabled hidden>State</option>
+                    <option value="1">New Mexico</option>
+                    <option value="2">Ohio</option>
+                    <option value="3">Oklahoma</option>
+                  </select>
+                  <div class="select__arrow" id="arrow"></div>
                 </div>
               </div>
               <div class="form__item form__item--short">
@@ -90,7 +90,7 @@
           </form>
 
           <form class="check-out__order-form form-order" action="#" method="POST" enctype="multipart/form-data">
-            <fieldset class="form-order-field fieldset">
+            <fieldset class="form-order__field fieldset">
               <legend class="fieldset__legend title">Shipping Address</legend>
               <div class="fieldset__desc">
                 <p>Select the address that matches your card or payment method.</p>
@@ -117,7 +117,7 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="form-order-field fieldset">
+            <fieldset class="form-order__field fieldset">
               <legend class="fieldset__legend fieldset__legend--big-margin title">Shipping Method</legend>
               <div class="gray-card">
                 <div class="gray-card__item">
@@ -140,7 +140,7 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="form-order-field fieldset">
+            <fieldset class="form-order__field fieldset">
               <legend class="fieldset__legend title">Payment Method</legend>
               <div class="fieldset__desc">
                 <p>All transactions are secure and encrypted.</p>
@@ -174,21 +174,21 @@
                     </ul>
                     <div class="card-data__inputs inputs-card">
                       <div class="inputs-card__item">
-                        <input class="inputs-card__input input" type="number" placeholder="Card number" name="card-num"
-                          id="card-num">
+                        <input class="inputs-card__input input" required type="number" placeholder="Card number"
+                          name="card-num" id="card-num">
                       </div>
                       <div class="inputs-card__item">
-                        <input class="inputs-card__input input" type="text" placeholder="Name of card" name="card-name"
-                          id="card-name">
+                        <input class="inputs-card__input input" required type="text" placeholder="Name of card"
+                          name="card-name" id="card-name">
                       </div>
                       <div class="inputs-card__item">
-                        <input class="inputs-card__input input" type="text" maxlength="5"
+                        <input class="inputs-card__input input" required type="text" maxlength="5"
                           placeholder="Expiration date (MM/YY)" name="exp-date" id="exp-date">
                       </div>
                       <div class="inputs-card__item inputs-card__item--relative">
-                        <input type="number" class="inputs-card__input input" placeholder="Security Code"
+                        <input type="password" required class="inputs-card__input input" placeholder="Security Code"
                           name="sec-code" id="sec-code">
-                        <button class="eye"></button>
+                        <button aria-label='view password' class="eye"></button>
                       </div>
                     </div>
                   </div>
@@ -214,6 +214,7 @@
                 </div>
               </div>
             </fieldset>
+            <button type="submit" class="button button--tiny-text">Pay Now</button>
           </form>
 
 
@@ -224,15 +225,6 @@
       The footer is not yet implemented.
     </footer>
   </div>
-  <script>
-    var options = document.querySelectorAll('.select__option');
-    var input = document.getElementById('state');
-    options.forEach(function (option) {
-      option.addEventListener('click', function () {
-        input.value = option.textContent;
-      });
-    });
-  </script>
 </body>
 
 </html>

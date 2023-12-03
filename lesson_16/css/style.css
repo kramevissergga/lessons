@@ -22,6 +22,7 @@ body {
 }
 .page {
   flex-grow: 1;
+  padding: 15px 0;
 }
 
 .page__container {
@@ -200,11 +201,16 @@ body {
 .button--tiny-text {
   font-size: 18px;
   font-weight: 500;
+  padding: 16px 20px;
 }
 .select {
   flex: 0 0 55px;
   position: relative;
 }
+.select__input {
+  appearance: none;
+}
+
 .select__placeholder {
   color: #807d7e;
 }
@@ -217,9 +223,9 @@ body {
   position: absolute;
   top: 31%;
   right: 22.3px;
-  cursor: pointer;
+  pointer-events: none;
 }
-.select__arrow:hover {
+.select:hover .select__arrow {
   background-image: url("../img/down-active.svg");
 }
 .select__input {
@@ -273,12 +279,14 @@ body {
 .form-shipping-address {
   padding-top: 8px;
 }
-.form-order-field {
+
+.form-order__field:not(:last-of-type):not(:last-child) {
   padding-bottom: 30px;
-}
-.form-order-field:not(:last-child) {
   border-bottom: 1px #bebcbd solid;
   margin-bottom: 30px;
+}
+.form-order__field:last-of-type {
+  margin-bottom: 50px;
 }
 .fieldset__desc {
   font-size: 16px;

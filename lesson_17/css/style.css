@@ -51,11 +51,10 @@ body {
   flex-wrap: wrap;
   margin: 0 -25px;
   row-gap: 50px;
-  justify-content: center;
 }
 .pop-mangalsutra {
   padding: 0 25px;
-  flex: 1 1 33.3333%;
+  flex: 0 1 33.3333%;
 }
 .picture {
   overflow: hidden;
@@ -143,7 +142,6 @@ body {
 .cards-products {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   margin: 0 -15px;
   row-gap: 30px;
 }
@@ -152,8 +150,7 @@ body {
 }
 .jewellery-product {
   padding: 0 15px;
-  flex: 1 1 25%;
-  max-width: 400px;
+  flex: 0 1 25%;
 }
 .jewellery-product__picture:not(:last-child) {
   margin-bottom: 17px;
@@ -162,7 +159,6 @@ body {
   border-radius: 5px;
 }
 .jewellery-product__picture .picture__img {
-  object-fit: contain;
   aspect-ratio: 1/1;
 }
 .jewellery-product__name,
@@ -180,7 +176,7 @@ body {
 .jewellery-product__price:not(:last-child) {
   margin-bottom: 8px;
 }
-.rings__button {
+.rings__more-link {
   padding: 12px 42.5px;
   position: relative;
   left: 50%;
@@ -193,7 +189,7 @@ body {
   transition: background-color 0.3s;
 }
 @media (any-hover: hover) {
-  .rings__button:hover {
+  .rings__more-link:hover {
     background-color: rgb(204, 59, 6);
   }
 }
@@ -204,7 +200,6 @@ body {
   color: #fff;
   font-family: "DM Serif Text", serif;
   font-size: 48px;
-  font-weight: 400;
   text-align: center;
 }
 .products__title:not(:last-child) {
@@ -259,16 +254,16 @@ body {
 }
 @media (max-width: 767.98px) {
   .mangalsutras__title:not(:last-child) {
-    margin-bottom: 17px;
+    margin-bottom: 8px;
   }
   .mangalsutras__text:not(:last-child) {
-    margin-bottom: 17px;
+    margin-bottom: 25px;
   }
   .rings__title {
     font-size: 40px;
   }
   .rings__title:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
   }
   .rings__text {
     font-size: 24px;

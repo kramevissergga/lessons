@@ -2,6 +2,7 @@
 @import url("reset.css");
 
 body {
+  font-size: 14px;
 }
 
 [class*="__container"] {

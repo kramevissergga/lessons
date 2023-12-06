@@ -1,0 +1,139 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+  font-size: 16px;
+  background-color: #fefaf4;
+  line-height: 1.2;
+  color: #606060;
+  font-family: "Inter", sans-serif;
+}
+
+[class*="__container"] {
+  max-width: 1201px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.page {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pop-products {
+}
+.pop-products__title {
+  font-size: 58px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.pop-products__title:not(:last-child) {
+  margin-bottom: 27px;
+}
+.title {
+  color: #000;
+  font-family: "DM Serif Text", serif;
+}
+.pop-products__text {
+  font-size: 20px;
+  text-align: center;
+}
+.pop-products__text:not(:last-child) {
+  margin-bottom: 53px;
+}
+
+.pop-products__cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -25px;
+  row-gap: 50px;
+  justify-content: center;
+}
+.product-pop {
+  padding: 0 25px;
+  flex: 1 1 33.3333%;
+}
+.picture {
+  overflow: hidden;
+  width: 100%;
+}
+@media (any-hover: hover) {
+  .picture:hover .picture__img {
+    transform: scale(1.1);
+  }
+}
+.picture__img {
+  width: 100%;
+  aspect-ratio: 357/240;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+.product-pop__title {
+  font-size: 24px;
+}
+.product-pop__title:not(:last-child),
+.product-pop__picture:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+@media (any-hover: hover) {
+  .text-link:hover {
+    text-decoration: underline;
+  }
+}
+.product-pop__text:not(:last-child) {
+  margin-bottom: 8px;
+}
+.read-more {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.read-more__link {
+  color: #f55529;
+  font-weight: 800;
+}
+.read-more__icon-link {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: url(../img/arrow.svg) no-repeat center / contain, #f55529;
+  transition: transform 0.2s;
+}
+@media (any-hover: hover) {
+  .read-more__icon-link:hover {
+    transform: scale(1.1);
+  }
+}
+@media (max-width: 990.98px) {
+  .product-pop {
+    flex: 0 0 50%;
+  }
+}
+@media (max-width: 767.98px) {
+  .product-pop__title {
+    font-size: 20px;
+  }
+  .pop-products__title {
+    font-size: 40px;
+  }
+  .pop-products__title:not(:last-child) {
+    margin-bottom: 17px;
+  }
+}
+@media (max-width: 576px) {
+  .product-pop {
+    flex: 0 0 100%;
+  }
+  .pop-products__text {
+    font-size: 16px;
+  }
+}

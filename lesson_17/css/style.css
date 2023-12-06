@@ -1,19 +1,18 @@
 @import url("fonts.css");
 @import url("reset.css");
+@import url("rings.css");
 
 body {
   font-size: 16px;
-  background-color: #fefaf4;
-  line-height: 1.2;
   color: #606060;
   font-family: "Inter", sans-serif;
+  line-height: 1.2;
 }
 
 [class*="__container"] {
   max-width: 1201px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 30px 15px;
 }
 
 .wrapper {
@@ -28,36 +27,35 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.pop-products {
+.mangalsutras {
+  background-color: #fefaf4;
 }
-.pop-products__title {
+.mangalsutras__title {
   font-size: 58px;
   text-transform: capitalize;
-  text-align: center;
 }
-.pop-products__title:not(:last-child) {
+.mangalsutras__title:not(:last-child) {
   margin-bottom: 27px;
 }
 .title {
   color: #000;
   font-family: "DM Serif Text", serif;
 }
-.pop-products__text {
+.mangalsutras__text {
   font-size: 20px;
-  text-align: center;
 }
-.pop-products__text:not(:last-child) {
+.mangalsutras__text:not(:last-child) {
   margin-bottom: 53px;
 }
 
-.pop-products__cards {
+.mangalsutras__cards {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -25px;
   row-gap: 50px;
   justify-content: center;
 }
-.product-pop {
+.pop-mangalsutra {
   padding: 0 25px;
   flex: 1 1 33.3333%;
 }
@@ -76,11 +74,11 @@ body {
   object-fit: cover;
   transition: transform 0.2s;
 }
-.product-pop__title {
+.pop-mangalsutra__title {
   font-size: 24px;
 }
-.product-pop__title:not(:last-child),
-.product-pop__picture:not(:last-child) {
+.pop-mangalsutra__title:not(:last-child),
+.pop-mangalsutra__picture:not(:last-child) {
   margin-bottom: 16px;
 }
 
@@ -89,7 +87,10 @@ body {
     text-decoration: underline;
   }
 }
-.product-pop__text:not(:last-child) {
+.pop-mangalsutra__text {
+  line-height: 1.6;
+}
+.pop-mangalsutra__text:not(:last-child) {
   margin-bottom: 8px;
 }
 .read-more {
@@ -113,27 +114,129 @@ body {
     transform: scale(1.1);
   }
 }
+.rings {
+  background-color: #fff;
+}
+.rings__container {
+  max-width: 1165px;
+}
+.rings__title {
+  color: #291403;
+  font-size: 58px;
+  text-align: center;
+}
+.rings__title:not(:last-child) {
+  margin-bottom: 27px;
+}
+.rings__text {
+  color: #818181;
+  text-align: center;
+  font-family: "Cormorant Infant", serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+.rings__text:not(:last-child) {
+  margin-bottom: 62px;
+}
+.rings__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 -15px;
+  row-gap: 30px;
+}
+.rings__cards:not(:last-child) {
+  margin-bottom: 88px;
+}
+.pop-ring {
+  padding: 0 15px;
+  flex: 1 1 25%;
+}
+.pop-ring__picture:not(:last-child) {
+  margin-bottom: 17px;
+}
+.pop-ring__picture .picture__img {
+  object-fit: contain;
+}
+.pop-ring__name,
+.pop-ring__price {
+  color: #000;
+  font-family: "Cormorant Infant", serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+.pop-ring__name:not(:last-child),
+.pop-ring__price:not(:last-child) {
+  margin-bottom: 8px;
+}
+.rings__button {
+  padding: 12px 42.5px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff7a49;
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+@media (any-hover: hover) {
+  .rings__button:hover {
+    background-color: rgb(204, 59, 6);
+  }
+}
 @media (max-width: 990.98px) {
-  .product-pop {
+  .pop-mangalsutra {
+    flex: 0 0 50%;
+  }
+  .pop-ring {
     flex: 0 0 50%;
   }
 }
 @media (max-width: 767.98px) {
-  .product-pop__title {
-    font-size: 20px;
+  .mangalsutras__title:not(:last-child) {
+    margin-bottom: 17px;
   }
-  .pop-products__title {
+  .mangalsutras__text:not(:last-child) {
+    margin-bottom: 17px;
+  }
+  .rings__title {
     font-size: 40px;
   }
-  .pop-products__title:not(:last-child) {
-    margin-bottom: 17px;
+  .rings__title:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .rings__text {
+    font-size: 24px;
+  }
+  .rings__text:not(:last-child) {
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 576px) {
-  .product-pop {
-    flex: 0 0 100%;
+  .pop-mangalsutra__title {
+    font-size: 20px;
   }
-  .pop-products__text {
+  .mangalsutras__title {
+    font-size: 40px;
+  }
+  .mangalsutras__cards {
+    margin: 0;
+  }
+  .pop-mangalsutra {
+    flex: 0 0 100%;
+    padding: 0;
+  }
+  .mangalsutras__text {
     font-size: 16px;
+  }
+  .pop-ring {
+    flex: 0 0 100%;
+    padding: 0;
+  }
+  .rings__cards {
+    margin: 0;
   }
 }

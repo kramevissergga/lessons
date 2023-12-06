@@ -23,9 +23,6 @@ body {
 }
 .page {
   flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 .mangalsutras {
   background-color: #fefaf4;
@@ -81,10 +78,14 @@ body {
 .pop-mangalsutra__picture:not(:last-child) {
   margin-bottom: 16px;
 }
-
+.text-link {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.3s;
+}
 @media (any-hover: hover) {
   .text-link:hover {
-    text-decoration: underline;
+    text-decoration-color: inherit;
   }
 }
 .pop-mangalsutra__text {
@@ -138,7 +139,7 @@ body {
 .rings__text:not(:last-child) {
   margin-bottom: 62px;
 }
-.rings__cards {
+.cards-products {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -149,25 +150,34 @@ body {
 .rings__cards:not(:last-child) {
   margin-bottom: 88px;
 }
-.pop-ring {
+.jewellery-product {
   padding: 0 15px;
   flex: 1 1 25%;
+  max-width: 400px;
 }
-.pop-ring__picture:not(:last-child) {
+.jewellery-product__picture:not(:last-child) {
   margin-bottom: 17px;
 }
-.pop-ring__picture .picture__img {
-  object-fit: contain;
+.jewellery-product__picture--round {
+  border-radius: 5px;
 }
-.pop-ring__name,
-.pop-ring__price {
+.jewellery-product__picture .picture__img {
+  object-fit: contain;
+  aspect-ratio: 1/1;
+}
+.jewellery-product__name,
+.jewellery-product__price {
   color: #000;
   font-family: "Cormorant Infant", serif;
   font-size: 24px;
   font-weight: 700;
 }
-.pop-ring__name:not(:last-child),
-.pop-ring__price:not(:last-child) {
+.jewellery-product__price--white,
+.jewellery-product__name--white {
+  color: #fff;
+}
+.jewellery-product__name:not(:last-child),
+.jewellery-product__price:not(:last-child) {
   margin-bottom: 8px;
 }
 .rings__button {
@@ -187,11 +197,63 @@ body {
     background-color: rgb(204, 59, 6);
   }
 }
+.products {
+  background-color: #0e333d;
+}
+.products__title {
+  color: #fff;
+  font-family: "DM Serif Text", serif;
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+}
+.products__title:not(:last-child) {
+  margin-bottom: 24px;
+}
+.products__text:not(:last-child) {
+  margin-bottom: 34px;
+}
+.products__categories:not(:last-child) {
+  margin-bottom: 77px;
+}
+.products__text {
+  color: #ebebeb;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+.products__categories {
+  display: flex;
+  justify-content: center;
+  gap: 41px;
+}
+
+.radio-categories__input {
+  visibility: hidden;
+}
+@media (any-hover: hover) {
+  .radio-categories__label:hover {
+    cursor: pointer;
+  }
+}
+.radio-categories__input:checked + .radio-categories__label {
+  text-decoration-color: inherit;
+}
+.radio-categories__label {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.3s;
+}
 @media (max-width: 990.98px) {
   .pop-mangalsutra {
     flex: 0 0 50%;
   }
-  .pop-ring {
+  .jewellery-product {
     flex: 0 0 50%;
   }
 }
@@ -232,11 +294,14 @@ body {
   .mangalsutras__text {
     font-size: 16px;
   }
-  .pop-ring {
+  .jewellery-product {
     flex: 0 0 100%;
     padding: 0;
   }
-  .rings__cards {
+  .cards-products {
     margin: 0;
+  }
+  .products__categories {
+    gap: 10px;
   }
 }

@@ -58,11 +58,12 @@
               <div class="form__item form__item--short">
                 <label for="state" class="form__label">State*</label>
                 <div class="select">
-                  <select class="select__input input" name="state" id="state">
-                    <option selected disabled hidden>State</option>
-                    <option value="1">New Mexico</option>
-                    <option value="2">Ohio</option>
-                    <option value="3">Oklahoma</option>
+                  <select class="select__input input" required name="state" id="state">
+                    <option class="select__option select__option--placeholder" value="" selected disabled hidden>State
+                    </option>
+                    <option class="select__option" value="1">New Mexico</option>
+                    <option class="select__option" value="2">Ohio</option>
+                    <option class="select__option" value="3">Oklahoma</option>
                   </select>
                   <div class="select__arrow" id="arrow"></div>
                 </div>

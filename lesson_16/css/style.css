@@ -60,7 +60,12 @@ body {
   letter-spacing: 0.56px;
   margin-bottom: 20px;
 }
-
+.check-out__billing-form .form__input {
+  font-size: 14px;
+}
+.check-out__billing-form .form__label {
+  font-size: 16px;
+}
 .check-out__biling-form:not(:last-child) {
   padding-bottom: 32px;
   border-bottom: 1px #edeef2 solid;
@@ -230,38 +235,13 @@ body {
 }
 .select__input {
   width: 100%;
-  flex: 0 0 55px;
-  padding: 0 22px;
-  border: transparent 3px solid;
-  border-radius: 8px;
-  transition: border 0.2s;
-  background-color: #f6f6f6;
   height: 100%;
-  cursor: pointer;
 }
-.select__options {
-  padding-top: 10px;
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  visibility: hidden;
+.select__input:invalid {
+  color: #807d7e;
 }
 .select__option {
-  background-color: #f6f6f6;
-  padding: 10px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-.select__option:hover {
-  background-color: #fff;
-  color: #8a33fd;
-}
-.select__input:focus + .select__options,
-.select__options:hover {
-  visibility: visible;
-}
-.select__options--hidden {
-  visibility: hidden;
+  color: #3c4242;
 }
 .check-out__billing-form {
   max-width: 801px;

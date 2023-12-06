@@ -57,13 +57,14 @@
               <div class="form__item">
                 <label for="state" class="form__label">State*</label>
                 <div class="select">
-                  <label for="state" class="select__arrow"></label>
-                  <input id="state" type="text" placeholder="State" required class="select__input input">
-                  <ul class="select__options">
-                    <li class="select__option">Закарпаття</li>
-                    <li class="select__option">Львівщина</li>
-                    <li class="select__option">Тернопільщина</li>
-                  </ul>
+                  <select class="select__input input" required name="state" id="state">
+                    <option class="select__option select__option--placeholder" value="" selected disabled hidden>State
+                    </option>
+                    <option class="select__option" value="1">New Mexico</option>
+                    <option class="select__option" value="2">Ohio</option>
+                    <option class="select__option" value="3">Oklahoma</option>
+                  </select>
+                  <div class="select__arrow" id="arrow"></div>
                 </div>
               </div>
               <div class="form__item">
@@ -106,15 +107,6 @@
       The footer is not yet implemented.
     </footer>
   </div>
-  <script>
-    var options = document.querySelectorAll('.select__option');
-    var input = document.getElementById('state');
-    options.forEach(function (option) {
-      option.addEventListener('click', function () {
-        input.value = option.textContent;
-      });
-    });
-  </script>
 </body>
 
 </html>

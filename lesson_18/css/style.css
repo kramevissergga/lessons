@@ -1,0 +1,153 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+  font-size: 14px;
+}
+
+[class*="__container"] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 15px;
+  min-height: 100px;
+}
+.header__logo {
+  color: #000;
+  font-family: "Merriweather";
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 700;
+  flex-shrink: 0;
+  user-select: none;
+}
+.menu {
+}
+.menu__body {
+}
+.menu__list {
+  display: flex;
+  gap: 36px;
+  flex-wrap: wrap;
+}
+.menu__item {
+  color: #000;
+  font-family: "Merriweather";
+  font-size: 20px;
+  position: relative;
+}
+@media (any-hover: hover) {
+  .text-link:hover {
+    text-decoration-color: inherit;
+  }
+}
+.menu__item--active {
+  color: #d58417;
+  font-weight: 700;
+}
+.text-link {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.3s;
+}
+
+@media (any-hover: hover) {
+  .menu__item--dropdown:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.sub-menu {
+  font-size: 16px;
+  padding-top: 15px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  visibility: hidden;
+  opacity: 0;
+}
+.sub-menu__item {
+  padding: 5px;
+}
+.sub-menu__link {
+}
+.menu__item--dropdown .menu__link {
+  display: flex;
+  column-gap: 4px;
+  align-items: center;
+}
+.menu__item--dropdown .menu__link::after {
+  content: "";
+  width: 16px;
+  height: 8px;
+  background: url(../img/dropdown.webp) no-repeat center / cover;
+}
+
+.header__actions {
+  flex-shrink: 0;
+}
+.actions-header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.actions-header__item {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s;
+  user-select: none;
+}
+@media (any-hover: hover) {
+  .actions-header__item:hover {
+    transform: scale(1.1);
+  }
+}
+.actions-header span {
+  display: inline-block;
+  text-align: center;
+  padding-top: 2px;
+  font-size: 9px;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  bottom: 60%;
+  left: 60%;
+  border-radius: 50%;
+  background-color: #ff3333;
+  color: #fff;
+}
+.actions-header__img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.page {
+  flex-grow: 1;
+}

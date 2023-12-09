@@ -222,6 +222,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 41px;
+  flex-wrap: wrap;
 }
 
 .radio-categories__input {

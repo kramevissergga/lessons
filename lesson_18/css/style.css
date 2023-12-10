@@ -292,6 +292,9 @@ body {
   line-height: 1.48;
   flex-grow: 1;
 }
+.bottom-hero__text p:not(:last-child) {
+  margin-bottom: 10px;
+}
 .bottom-hero__additional-text {
   font-size: 32px;
   font-weight: 600;

@@ -11,7 +11,9 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-
+.footer {
+  font-size: 0;
+}
 .wrapper {
   overflow: clip;
   min-height: 100%;
@@ -292,7 +294,6 @@ body {
   font-weight: 700;
   line-height: 1.48;
   flex-grow: 1;
-  max-width: 312px;
 }
 .bottom-hero__additional-text {
   font-size: 32px;
@@ -449,7 +450,6 @@ body {
   .hero__bottom {
     padding: 0;
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
   }
   .hero__top {

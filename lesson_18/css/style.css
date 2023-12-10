@@ -11,9 +11,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-.footer {
-  font-size: 0;
-}
 .wrapper {
   overflow: clip;
   min-height: 100%;

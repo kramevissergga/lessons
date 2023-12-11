@@ -506,6 +506,10 @@ body {
   .white-hero__images {
     flex: 1 1 100%;
   }
+  .white-hero {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
 }
 
 @media (max-width: 480px) {

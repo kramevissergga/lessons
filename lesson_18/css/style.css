@@ -99,7 +99,7 @@ body {
 }
 .sub-menu__item {
   padding: 15px;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .menu__item--dropdown .menu__link {

@@ -64,6 +64,9 @@ body {
   .pop-mangalsutra:hover .picture__img {
     transform: scale(1.1);
   }
+  .picture:hover .picture__img {
+    transform: scale(1.1);
+  }
 }
 .picture__img {
   width: 100%;

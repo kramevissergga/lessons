@@ -61,7 +61,7 @@ body {
   width: 100%;
 }
 @media (any-hover: hover) {
-  .picture:hover .picture__img {
+  .pop-mangalsutra:hover .picture__img {
     transform: scale(1.1);
   }
 }
@@ -88,6 +88,11 @@ body {
     text-decoration-color: inherit;
   }
 }
+@media (any-hover: hover) {
+  .pop-mangalsutra__link:hover .pop-mangalsutra__title {
+    text-decoration: underline;
+  }
+}
 .pop-mangalsutra__text {
   line-height: 1.6;
 }
@@ -99,11 +104,11 @@ body {
   justify-content: space-between;
   gap: 10px;
 }
-.read-more__link {
+.read-more__text {
   color: #f55529;
   font-weight: 800;
 }
-.read-more__icon-link {
+.read-more__icon {
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -111,7 +116,7 @@ body {
   transition: transform 0.2s;
 }
 @media (any-hover: hover) {
-  .read-more__icon-link:hover {
+  .pop-mangalsutra__link:hover .read-more__icon {
     transform: scale(1.1);
   }
 }
@@ -245,9 +250,15 @@ body {
   text-decoration-color: transparent;
   transition: text-decoration-color 0.3s;
 }
+@media (any-hover: hover) {
+  .radio-categories__label:hover {
+    text-decoration-color: inherit;
+  }
+}
 @media (max-width: 990.98px) {
   .pop-mangalsutra {
     flex: 0 0 50%;
+    padding: 0 15px;
   }
   .jewellery-product {
     flex: 0 0 50%;

@@ -262,7 +262,13 @@ body {
   margin-bottom: 10px;
   max-width: 168px;
 }
-
+.item-sales__shop-now {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 20px;
+}
 .item-sales__text {
   color: #fff;
   font-family: "Causten", sans-serif;
@@ -279,8 +285,7 @@ body {
   width: 20px;
   aspect-ratio: 20/24;
   background: url("../img/white-arrow.svg") no-repeat center / cover;
-  margin-bottom: 40px;
-  margin: 0 45px 40px;
+  transition: transform 0.2s;
 }
 .item-sales__arrow--black {
   background-image: url("../img/black-arrow.svg");
@@ -295,7 +300,6 @@ body {
   font-family: "Causten", sans-serif;
   font-size: 12px;
   font-weight: 500;
-  margin-bottom: 20px;
   transition: background-color 0.2s;
 }
 .item-sales__content--black-text * {
@@ -329,6 +333,9 @@ body {
 @media (any-hover: hover) {
   .item-sales__link:hover {
     background-color: #ffffff63;
+  }
+  .item-sales__shop-now:hover .item-sales__arrow {
+    transform: translateY(100%);
   }
 }
 .item-sales__content > *:last-child {

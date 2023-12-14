@@ -362,6 +362,9 @@ body {
   .sales__item {
     grid-column: span 3;
   }
+  .sales__item--big .item-sales__content {
+    padding: 45px 50px;
+  }
 }
 @media (max-width: 575px) {
   .sales__items {
@@ -377,5 +380,8 @@ body {
   }
   .item-special__link {
     font-size: 25px;
+  }
+  .sales__item--big .item-sales__content {
+    padding: 45px 15px;
   }
 }

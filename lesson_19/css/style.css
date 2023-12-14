@@ -286,6 +286,7 @@ body {
   aspect-ratio: 20/24;
   background: url("../img/white-arrow.svg") no-repeat center / cover;
   transition: transform 0.2s;
+  order: 1;
 }
 .item-sales__arrow--black {
   background-image: url("../img/black-arrow.svg");
@@ -301,6 +302,7 @@ body {
   font-size: 12px;
   font-weight: 500;
   transition: background-color 0.2s;
+  order: 2;
 }
 .item-sales__content--black-text * {
   color: #3c4242;
@@ -334,7 +336,7 @@ body {
   .item-sales__link:hover {
     background-color: #ffffff63;
   }
-  .item-sales__shop-now:hover .item-sales__arrow {
+  .item-sales__link:hover + .item-sales__arrow {
     transform: translateY(100%);
   }
 }

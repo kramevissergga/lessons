@@ -510,6 +510,17 @@ body {
     padding-top: 50px;
     padding-bottom: 40px;
   }
+  .white-hero__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .white-hero__title {
+    text-align: center;
+  }
+  .white-hero__text {
+    text-align: center;
+  }
 }
 @media (max-width: 895px) {
   .hero {

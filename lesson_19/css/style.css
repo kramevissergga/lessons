@@ -206,8 +206,6 @@ body {
   letter-spacing: 0.2px;
 }
 
-.sales {
-}
 .sales__title:not(:last-child) {
   margin-bottom: 70px;
 }
@@ -407,6 +405,9 @@ body {
   .new:not(:last-child),
   .sales:not(:last-child) {
     margin-bottom: 50px;
+  }
+  .item-sales__text {
+    font-size: 16px;
   }
 }
 @media (max-width: 575px) {

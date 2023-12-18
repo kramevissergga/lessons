@@ -1,0 +1,206 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+  font-size: 20px;
+  background-color: #333;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  line-height: 1.2;
+}
+
+[class*="__container"] {
+  max-width: 1262px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.page {
+  padding: 50px 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.calculations {
+  padding: 20px;
+  border: #fff 3px solid;
+  border-radius: 5px;
+}
+.calculations:not(:last-child) {
+  margin-bottom: 70px;
+}
+.calculations__top {
+  margin-bottom: 30px;
+  display: flex;
+}
+.calcucations__title {
+  font-size: 30px;
+  font-weight: 700;
+  flex-grow: 1;
+}
+.calculations__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.calculations__item {
+  padding-bottom: 10px;
+  border-bottom: #fff solid 2px;
+}
+.item-calculations {
+  display: flex;
+  gap: 10px;
+}
+.item-calculations__name {
+  flex-grow: 1;
+}
+.item-calculations__result {
+  flex-shrink: 0;
+}
+.calculations > *:last-child {
+  margin-bottom: 0;
+}
+.history:not(:last-child) {
+  margin-bottom: 50px;
+}
+.history__top-panel {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 2px #fff solid;
+}
+.history__top-panel:not(:last-child) {
+  margin-bottom: 30px;
+}
+.history__title {
+  flex-grow: 1;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.button {
+  width: 30px;
+  height: 30px;
+  border: 2px #fff solid;
+  padding: 5px;
+  border-radius: 5px;
+}
+.button img {
+  width: 100%;
+  object-position: center;
+  aspect-ratio: 1/1;
+  pointer-events: none;
+}
+.history__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item-history {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border: 2px #fff solid;
+  border-radius: 5px;
+}
+
+.item-history__data {
+  display: flex;
+  gap: 10px;
+  flex-grow: 1;
+  padding: 0 15px;
+  align-items: center;
+}
+.item-history__name {
+  flex-grow: 1;
+}
+
+.item-history__actions {
+  display: flex;
+  gap: 10px;
+}
+
+.item-history__uuid {
+  display: none;
+}
+.history__form:not(:last-child) {
+  margin-bottom: 30px;
+}
+.form-history {
+  padding: 10px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  border: 2px solid #fff;
+}
+.form-history__content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.form-history__item {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-history__label {
+}
+.form-history__input {
+  width: 100%;
+  min-height: 35px;
+  border: 2px solid transparent;
+  border-bottom-color: #fff;
+  padding: 0 10px;
+  color: #fff;
+  background-color: transparent;
+}
+.form-history__input:focus {
+  outline: none;
+  border-color: #fff;
+}
+.date {
+  position: relative;
+}
+.date::after {
+  content: "";
+  right: 14px;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: url("../img/calendar.svg") no-repeat center / cover;
+  pointer-events: none;
+}
+.date::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 742px) {
+  .form-history,
+  .form-history__content {
+    flex-direction: column;
+  }
+  .item-history {
+    flex-direction: column;
+    align-items: center;
+  }
+  .item-history__data {
+    flex-grow: 0;
+    text-align: center;
+  }
+  .item-calculations__result {
+    flex-shrink: 1;
+  }
+}

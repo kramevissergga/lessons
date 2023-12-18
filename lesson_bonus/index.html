@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Some lesson</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__content"></div>
+    </header>
+    <main class="page">
+      <div class="page__container">
+        <div class="calculations">
+          <div class="calculations__top">
+            <h3 class="calcucations__title">Розрахунок стажу:</h3>
+            <form action="#" enctype="multipart/form-data">
+              <button type="submit" class="calculations__update button">
+                <img src="img/refresh.svg" alt="Icon">
+              </button>
+            </form>
+          </div>
+
+          <ul class="calculations__list">
+            <li class="calculations__item item-calculations">
+              <div class="item-calculations__name">Java-розробник</div>
+              <div class="item-calculations__result">2 роки і 4 місяці</div>
+            </li>
+            <li class="calculations__item item-calculations">
+              <div class="item-calculations__name">Столяр</div>
+              <div class="item-calculations__result">1 рік і 2 місяці</div>
+            </li>
+            <li class="calculations__item item-calculations">
+              <div class="item-calculations__name">Свинопас</div>
+              <div class="item-calculations__result">10 років і 11 місяців</div>
+            </li>
+          </ul>
+        </div>
+        <div class="history">
+          <div class="history__top-panel">
+            <h3 class="history__title">Історія праці</h3>
+          </div>
+          <form method="get" action="#" enctype="multipart/form-data" class="history__form form-history">
+            <input type="hidden" name="id">
+            <div class="form-history__content">
+              <div class="form-history__item">
+                <label for="name" class="form-history__label">Назва посади:</label>
+                <input required class="form-history__input" autocomplete="off" type="text" name="name"
+                  placeholder="Шахтар" id="name"></input>
+              </div>
+              <div class="form-history__item">
+                <label for="date-start" class="form-history__label">Початок:</label>
+                <input required class="form-history__input date" type="date" name="date-start" id="date-start">
+                </input>
+              </div>
+              <div class="form-history__item">
+                <label for="date-start" class="form-history__label">Кінець:</label>
+                <input required class="form-history__input date" type="date" name="date-end" id="date-end">
+                </input>
+              </div>
+            </div>
+            <button type="submit" class="form-history__submit button">
+              <img src="img/add.svg" alt="Icon">
+            </button>
+          </form>
+          <ul class="history__list">
+            <li class="history__item item-history">
+              <label class="item-history__uuid">d7b68d17-86e2-4648-aa3d-572a0337e3fa</label>
+              <div class="item-history__data">
+                <div class="item-history__name">Java-розробник</div>
+                <div class="item-history__period">2010-12-01 - 2023-12-01</div>
+              </div>
+              <div class="item-history__actions">
+                <button class="item-history__edit button">
+                  <img src="img/edit.svg" alt="Icon">
+                </button>
+                <button class="item-history__del button">
+                  <img src="img/trash.svg" alt="Icon">
+                </button>
+              </div>
+            </li>
+            <li class="history__item item-history">
+              <label class="item-history__uuid">d2613514-df7d-404e-b6e0-810480d7471d</label>
+              <div class="item-history__data">
+                <div class="item-history__name">Столяр</div>
+                <div class="item-history__period">2005-12-01 - 2023-12-01</div>
+              </div>
+              <div class="item-history__actions">
+                <button class="item-history__edit button">
+                  <img src="img/edit.svg" alt="Icon">
+                </button>
+                <form action="#" enctype="multipart/form-data">
+                  <input type="hidden" name="id" id="history-item-id">
+                  <button type="submit" class="item-history__del button">
+                    <img src="img/trash.svg" alt="Icon">
+                  </button>
+                </form>
+
+              </div>
+            </li>
+            <li class="history__item item-history">
+              <label class="item-history__uuid">d6d299c5-3a7f-4f3e-82df-1d0d7d35bdce</label>
+              <div class="item-history__data">
+                <div class="item-history__name">Свинопас</div>
+                <div class="item-history__period">2017-12-01 - 2023-12-01</div>
+              </div>
+              <div class="item-history__actions">
+                <button class="item-history__edit button">
+                  <img src="img/edit.svg" alt="Icon">
+                </button>
+                <button class="item-history__del button">
+                  <img src="img/trash.svg" alt="Icon">
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__content"></div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -54,9 +54,6 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
-.special:not(:last-child) {
-  margin-bottom: 100px;
-}
 .special__item {
   border-radius: 12px;
   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.4);
@@ -67,7 +64,6 @@ body {
   padding: 67px 28px;
 }
 .item-special__background {
-  aspect-ratio: 604/355;
   position: absolute;
   top: 0;
   left: 0;
@@ -123,7 +119,7 @@ body {
   margin-bottom: 0;
 }
 
-.new:not(:last-child) {
+.page__section:not(:last-child) {
   margin-bottom: 100px;
 }
 .new__title:not(:last-child) {
@@ -132,9 +128,10 @@ body {
 .slider {
   display: grid;
   grid-template-columns: 14px 1fr 14px;
-  grid-template-rows: 1fr 14px;
-  margin-bottom: 50px;
   gap: 33px 23px;
+}
+.new__slider {
+  margin-bottom: 50px;
 }
 .slider__arrow {
   align-self: center;
@@ -154,6 +151,8 @@ body {
   grid-row: 2;
   grid-column: 1 / -1;
   justify-self: center;
+  padding: 0 40px;
+  flex-wrap: wrap;
 }
 .slider__page {
   width: 8px;
@@ -186,6 +185,7 @@ body {
   width: 100%;
   aspect-ratio: 1/1;
   transition: transform 0.2s;
+  object-fit: cover;
 }
 .new > *:last-child {
   margin-bottom: 0;
@@ -303,7 +303,9 @@ body {
   transition: background-color 0.2s;
   order: 2;
 }
-.item-sales--black-text * {
+.item-sales--black-text .title-item,
+.item-sales--black-text .item-sales__text,
+.item-sales--black-text .item-sales__link {
   color: #3c4242;
   border-color: #3c4242;
 }
@@ -345,7 +347,6 @@ body {
 }
 @media (max-width: 990.98px) {
   .slider {
-    grid-template-rows: 1fr 30px;
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
@@ -401,9 +402,7 @@ body {
   .sales__title:not(:last-child) {
     margin-bottom: 40px;
   }
-  .special:not(:last-child),
-  .new:not(:last-child),
-  .sales:not(:last-child) {
+  .page__section:not(:last-child) {
     margin-bottom: 50px;
   }
   .item-sales__text {
@@ -413,6 +412,12 @@ body {
 @media (max-width: 575px) {
   .sales__items {
     grid-template-columns: 1fr;
+  }
+  .sales__item {
+    grid-column: auto;
+  }
+  .item-sales--big {
+    grid-column: auto;
   }
 }
 @media (max-width: 440px) {

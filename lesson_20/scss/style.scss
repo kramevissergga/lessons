@@ -1,6 +1,8 @@
 @import "_reset.scss";
 @import "_fonts.scss";
 
+$tablet: 991.98px;
+$titleColor: #37393f;
 body {
   color: #7d7d7d;
   font-family: "Inter", sans-serif;
@@ -37,7 +39,7 @@ body {
     }
   }
   &__subtitle {
-    color: #37393f;
+    color: $titleColor;
     font-family: "Inter", sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -112,7 +114,7 @@ body {
   }
 }
 .title {
-  color: #37393f;
+  color: $titleColor;
   font-family: "Poppins", sans-serif;
 }
 .item-news {
@@ -193,7 +195,7 @@ body {
         border-right: none;
       }
     }
-    @media (max-width: 990.98px) {
+    @media (max-width: $tablet) {
       font-size: 16px;
     }
     @media (max-width: 441px) {

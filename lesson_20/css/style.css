@@ -271,7 +271,7 @@ body {
 .details-item-news__item--purple:not(:last-child) {
   border-right: none;
 }
-@media (max-width: 990.98px) {
+@media (max-width: 991.98px) {
   .details-item-news__item {
     font-size: 16px;
   }

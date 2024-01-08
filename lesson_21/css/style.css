@@ -491,19 +491,19 @@ body {
   position: relative;
   z-index: 2;
   padding: 0 40px;
-  min-height: calc(100dvh - 110px);
+  min-height: calc(100dvh - 110px - 30px);
   display: grid;
   align-items: center;
   gap: 15px 8.902692%;
 }
 @media (max-width: 1050px) {
   .hero__body {
-    min-height: calc(100dvh - 68px);
+    min-height: calc(100dvh - 68px - 30px);
   }
 }
 @media (max-width: 433px) {
   .hero__body {
-    min-height: calc(100dvh - 57px);
+    min-height: calc(100dvh - 57px - 30px);
   }
 }
 @media (min-width: 990.98px) {

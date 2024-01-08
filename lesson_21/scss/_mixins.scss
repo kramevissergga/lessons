@@ -1,0 +1,21 @@
+@mixin headerButton(
+  $bgColor: #f6f6f6,
+  $hoverColor: #ebebeb,
+  $activeColor: #cccbcb
+) {
+  border-radius: 8px;
+  background-color: $bgColor;
+  transition: background-color 0.2s;
+  padding: 12px;
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: $hoverColor;
+    }
+    &:active {
+      background-color: $activeColor;
+    }
+  }
+  @media (max-width: 433px) {
+    padding: 4px;
+  }
+}

@@ -159,8 +159,17 @@ $tablet: 990.98px;
   &__slide {
     height: 44px;
     width: 24px;
+    transition: transform 0.2s;
     @media (max-width: $tablet) {
       display: none;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    img {
+      width: 100%;
     }
   }
 

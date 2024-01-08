@@ -585,11 +585,20 @@ body {
 .hero__slide {
   height: 44px;
   width: 24px;
+  transition: transform 0.2s;
 }
 @media (max-width: 990.98px) {
   .hero__slide {
     display: none;
   }
+}
+@media (any-hover: hover) {
+  .hero__slide:hover {
+    transform: scale(1.1);
+  }
+}
+.hero__slide img {
+  width: 100%;
 }
 @media (min-width: 990.98px) {
   .hero__pages {

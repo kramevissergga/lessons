@@ -40,9 +40,6 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    > button {
-      @include headerButton();
-    }
   }
   &__form-search {
     min-width: 124px;
@@ -193,6 +190,7 @@
   }
 }
 .menu-switch {
+  @include headerButton();
   position: relative;
   @media (min-width: 1050px) {
     display: none;
@@ -239,6 +237,7 @@
   }
 }
 .search-switch {
+  @include headerButton();
   position: relative;
   @media (min-width: 607px) {
     display: none;

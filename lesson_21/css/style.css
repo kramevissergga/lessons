@@ -1107,6 +1107,11 @@ body {
   gap: 50px;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
 }
+@media (max-width: 990.98px) {
+  .categories__items {
+    gap: 30px;
+  }
+}
 @media (any-hover: hover) {
   .item-category__link:hover .item-category__title {
     text-decoration-color: inherit;

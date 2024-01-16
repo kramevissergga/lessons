@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:regular,600&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,700&display=swap");
+:root {
+  --body-background-color: #333;
+}
+
 *,
 *::before,
 *::after {
@@ -77,7 +81,7 @@ textarea {
 }
 
 body {
-  background-color: #333;
+  background-color: var(--body-background-color);
   font-family: "Montserrat", sans-serif;
   color: #fff;
   font-size: 0.75rem;
@@ -86,8 +90,7 @@ body {
 [class*=__container] {
   max-width: 894px;
   margin: 0 auto;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding: 0.9375rem;
 }
 
 .wrapper {
@@ -99,11 +102,15 @@ body {
 
 .page {
   flex-grow: 1;
-  display: flex;
-  align-items: center;
 }
 .page__container {
-  padding: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.125rem;
+  align-items: center;
+}
+
+.demonical-block {
   display: grid;
   gap: 0.75rem;
   aspect-ratio: 864/353;
@@ -112,7 +119,7 @@ body {
   justify-content: center;
 }
 @media (max-width: 43.75em) {
-  .page__container {
+  .demonical-block {
     grid-template-columns: 28% 60.8%;
     grid-template-rows: 33.63% 36.73% 17.7%;
     aspect-ratio: 375/452;
@@ -355,4 +362,121 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.demonical-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+  gap: 0.9375rem;
+}
+.demonical-card {
+  border: var(--body-background-color) 0.5rem solid;
+  width: 100%;
+  aspect-ratio: 590/281;
+  border-radius: 1.25rem;
+  padding: 2.5rem;
+  padding-right: 5.3125rem;
+  background-color: #fff;
+  position: relative;
+}
+@media (max-width: 31.25em) {
+  .demonical-card {
+    padding: 1.25rem;
+    padding-right: 5.3125rem;
+  }
+}
+.demonical-card__num {
+  color: #5b7fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--body-background-color);
+  border-bottom-left-radius: 1.5625rem;
+  font-size: 2.375rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.demonical-card::before, .demonical-card::after {
+  content: "";
+  position: absolute;
+  height: 3.125rem;
+  width: 3.125rem;
+  border-top-right-radius: 50%;
+  background-color: transparent;
+  box-shadow: 0.5rem -0.5rem 0 var(--body-background-color);
+}
+.demonical-card::before {
+  top: 0;
+  right: 5rem;
+}
+.demonical-card::after {
+  top: 4.9375rem;
+  right: 0;
+}
+.demonical-card__title {
+  color: #212121;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+@media (min-width: 55.875em) {
+  .demonical-card__title {
+    font-size: 1.6875rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 55.875em) {
+  @supports (font-size: clamp( 1.25rem , 1.006097561rem  +  1.2195121951vw , 1.6875rem )) {
+    .demonical-card__title {
+      font-size: clamp( 1.25rem , 1.006097561rem  +  1.2195121951vw , 1.6875rem );
+    }
+  }
+  @supports not (font-size: clamp( 1.25rem , 1.006097561rem  +  1.2195121951vw , 1.6875rem )) {
+    .demonical-card__title {
+      font-size: calc(1.25rem + 0.4375 * (100vw - 20rem) / 35.875);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .demonical-card__title {
+    font-size: 1.25rem;
+  }
+}
+.demonical-card__title:not(:last-child) {
+  margin-bottom: 0.8888888889em;
+}
+.demonical-card__text {
+  color: #212121;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+@media (min-width: 55.875em) {
+  .demonical-card__text {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 55.875em) {
+  @supports (font-size: clamp( 1rem , 0.9303135889rem  +  0.3484320557vw , 1.125rem )) {
+    .demonical-card__text {
+      font-size: clamp( 1rem , 0.9303135889rem  +  0.3484320557vw , 1.125rem );
+    }
+  }
+  @supports not (font-size: clamp( 1rem , 0.9303135889rem  +  0.3484320557vw , 1.125rem )) {
+    .demonical-card__text {
+      font-size: calc(1rem + 0.125 * (100vw - 20rem) / 35.875);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .demonical-card__text {
+    font-size: 1rem;
+  }
+}
+.demonical-card__text:not(:last-child) {
+  margin-bottom: 0.8888888889em;
 }

@@ -130,6 +130,7 @@ body {
   padding: 0.3125rem 0.625rem;
 }
 .stats__row {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 0.625rem;

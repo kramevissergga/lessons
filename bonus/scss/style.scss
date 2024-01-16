@@ -59,6 +59,7 @@ body {
   justify-content: center;
   padding: toRem(5) toRem(10);
   &__row {
+    width: 100%;
     &:not(:last-child) {
       padding-bottom: toRem(16);
       margin-bottom: toRem(16);

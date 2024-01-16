@@ -1,6 +1,10 @@
-.title-section {
+%title {
   color: #37393f;
   font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.title-section {
+  @extend %title;
   @include adaptiveValue("font-size", 40, 24);
   font-weight: 700;
   line-height: 1.21;
@@ -29,13 +33,13 @@
 .header-section {
   &__subtitle {
     &:not(:last-child) {
-      margin-bottom: toEm(16);
+      margin-bottom: toEm(16, 18);
     }
   }
 
   &__title {
     &:not(:last-child) {
-      margin-bottom: toEm(16);
+      margin-bottom: toEm(16, 40);
     }
   }
 }
@@ -56,4 +60,7 @@
   &:active {
     background-color: #515aad;
   }
+}
+.green {
+  color: #40ddb6;
 }

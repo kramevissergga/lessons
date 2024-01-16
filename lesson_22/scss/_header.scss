@@ -1,6 +1,6 @@
 .header {
   background-color: #fff;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -83,6 +83,7 @@
   }
 
   &__text {
+    font-size: toRem(14);
   }
 }
 .list-social {
@@ -144,19 +145,20 @@
       z-index: 1;
       background-color: #fff;
       overflow: auto;
-      &::before {
-        content: "";
-        position: fixed;
-        top: 0;
-        left: 0;
-        background-color: #fff;
-        width: 100%;
-        z-index: 40;
-        height: toRem(78);
-      }
+
       transition: right 0.2s;
       .menu-open & {
         right: 0;
+        &::before {
+          content: "";
+          position: fixed;
+          top: 0;
+          left: 0;
+          background-color: #fff;
+          width: 100%;
+          z-index: 40;
+          height: toRem(78);
+        }
       }
     }
   }

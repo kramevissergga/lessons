@@ -255,6 +255,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 1rem;
   justify-content: center;
   padding: 0.3125rem 0.625rem;
 }
@@ -267,7 +268,6 @@ body {
 }
 .stats__row:not(:last-child) {
   padding-bottom: 1rem;
-  margin-bottom: 1rem;
   border-bottom: 0.0625rem solid rgba(243, 246, 247, 0.3);
 }
 .stats__item {

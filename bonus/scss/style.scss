@@ -12,6 +12,9 @@ $containerWidth: $maxWidthContainer + $containerPadding;
 
 body {
   background-color: #333;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: toRem(12);
 }
 
 [class*="__container"] {
@@ -50,7 +53,48 @@ body {
   background-color: #5b7fff;
   grid-column: 1;
   grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: toRem(5) toRem(10);
+  &__row {
+    &:not(:last-child) {
+      padding-bottom: toRem(16);
+      margin-bottom: toRem(16);
+      border-bottom: toRem(1) solid rgba(243, 246, 247, 0.3);
+    }
+    display: flex;
+    justify-content: space-between;
+    gap: toRem(10);
+    align-items: center;
+  }
+
+  &__item {
+    display: flex;
+    gap: toRem(6);
+    align-items: center;
+  }
 }
+.item-stats {
+  &__count {
+    @include adaptiveValue("font-size", 14, 12);
+    font-weight: 600;
+    line-height: 1.2;
+    @media (max-width: toEm(700)) {
+      @include adaptiveValue("font-size", 24, 16);
+    }
+  }
+
+  &__text {
+    line-height: 1.1;
+    letter-spacing: toRem(-0.24);
+    @media (max-width: toEm(700)) {
+      @include adaptiveValue("font-size", 16, 12);
+    }
+  }
+}
+
 .big-image {
   grid-column: 1/2;
   grid-row: 1;
@@ -245,6 +289,38 @@ body {
   background-color: #ff5b5b;
   grid-column: 3;
   grid-row: 1;
+  font-family: "Inter", sans-serif;
+  font-size: toRem(24);
+  transition: background-color 0.3s;
+  @media (max-width: toEm(700)) {
+    @include adaptiveValue("font-size", 50, 24);
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: toRem(4);
+  span {
+    display: flex;
+    align-items: center;
+    gap: toRem(4);
+    &::after {
+      content: "";
+      height: toRem(20);
+      width: toRem(30);
+      background: url("../img/arrow.svg") no-repeat center / cover;
+      transition: transform 0.3s;
+    }
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: #d35050;
+      span {
+        &::after {
+          transform: translateX(50%);
+        }
+      }
+    }
+  }
   @media (max-width: toEm(700)) {
     grid-column: 1;
     grid-row: 2;
@@ -358,5 +434,3 @@ body {
   height: 100%;
   object-fit: cover;
 }
-@import "_header.scss";
-@import "_footer.scss";

@@ -208,18 +208,18 @@ body {
 }
 @media (max-width: 43.75em) and (min-width: 55.875em) {
   .demonical-block__order {
-    font-size: 3.125rem;
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 43.75em) and (min-width: 20em) and (max-width: 55.875em) {
-  @supports (font-size: clamp( 1.5rem , 0.5940766551rem  +  4.5296167247vw , 3.125rem )) {
+  @supports (font-size: clamp( 1.5rem , 0.9425087108rem  +  2.787456446vw , 2.5rem )) {
     .demonical-block__order {
-      font-size: clamp( 1.5rem , 0.5940766551rem  +  4.5296167247vw , 3.125rem );
+      font-size: clamp( 1.5rem , 0.9425087108rem  +  2.787456446vw , 2.5rem );
     }
   }
-  @supports not (font-size: clamp( 1.5rem , 0.5940766551rem  +  4.5296167247vw , 3.125rem )) {
+  @supports not (font-size: clamp( 1.5rem , 0.9425087108rem  +  2.787456446vw , 2.5rem )) {
     .demonical-block__order {
-      font-size: calc(1.5rem + 1.625 * (100vw - 20rem) / 35.875);
+      font-size: calc(1.5rem + 1 * (100vw - 20rem) / 35.875);
     }
   }
 }

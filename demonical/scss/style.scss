@@ -107,7 +107,7 @@ body {
 .big-image {
   grid-column: 1 / span 3;
   grid-row: 1 / span 4;
-  aspect-ratio: 499/324;
+  /*aspect-ratio: 499/324;*/
   width: 100%;
   height: 100%;
   justify-self: self-start;
@@ -116,7 +116,7 @@ body {
     grid-column: 1 / span 2;
     grid-row: 2 / span 2;
     width: 100%;
-    aspect-ratio: 343/255;
+    /*aspect-ratio: 343/255;*/
     clip-path: polygon(
       36.218% 64.698%,
       36.218% 64.698%,
@@ -343,7 +343,7 @@ body {
   justify-self: self-end;
   width: 100%;
   height: 100%;
-  aspect-ratio: 353/244;
+  /*aspect-ratio: 353/244;*/
   background-color: #5bd9ff;
   @media (max-width: toEm(700)) {
     display: none;
@@ -427,7 +427,7 @@ body {
 .sml-image {
   width: 100%;
   height: 100%;
-  aspect-ratio: 134/324;
+  /*aspect-ratio: 134/324;*/
   background-color: #ffef5b;
   border-radius: toRem(12);
   grid-column: 5;

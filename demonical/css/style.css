@@ -356,7 +356,7 @@ body {
 .demonical-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
-  gap: 0.9375rem;
+  gap: 1.5625rem;
 }
 
 .demonical-card {

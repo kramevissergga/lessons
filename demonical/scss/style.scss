@@ -212,52 +212,25 @@ body {
   gap: toRem(15);
 }
 .demonical-card {
-  border: var(--body-background-color) toRem(8) solid;
-  width: 100%;
+  $decoration-width: toRem(100);
+  &:nth-child(n) {
+    counter-increment: cardCounter;
+  }
+  width: calc(100% - $decoration-width);
   aspect-ratio: 590/281;
-  border-radius: toRem(20);
+  border-radius: toRem(20) 0 0 toRem(20);
   padding: toRem(40);
-  padding-right: toRem(85);
+  padding-right: 0;
   @media (max-width: toEm(500)) {
     padding: toRem(20);
-    padding-right: toRem(85);
+    padding-right: 0;
   }
   background-color: #fff;
   position: relative;
-  &__num {
-    color: #5b7fff;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: toRem(80);
-    height: toRem(80);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Montserrat", sans-serif;
-    background-color: var(--body-background-color);
-    border-bottom-left-radius: toRem(25);
-    font-size: toRem(38);
-    font-weight: 600;
-    line-height: 1.2;
-  }
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    height: toRem(50);
-    width: toRem(50);
-    border-top-right-radius: 50%;
-    background-color: transparent;
-    box-shadow: toRem(8) toRem(-8) 0 var(--body-background-color);
-  }
+
   &::before {
     top: 0;
     right: toRem(80);
-  }
-  &::after {
-    top: toRem(79);
-    right: 0;
   }
   &__title {
     color: #212121;
@@ -283,5 +256,50 @@ body {
         margin-bottom: toRem(10);
       }
     }
+  }
+  &__right {
+    width: $decoration-width;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: -1%;
+    &::after {
+      content: "";
+      flex-grow: 1;
+      margin-top: -1%;
+      background-color: #fff;
+      border-bottom-right-radius: toRem(20);
+    }
+    &::before {
+      content: "";
+      color: #5b7fff;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 80%;
+      aspect-ratio: 1/1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Montserrat", sans-serif;
+      border-bottom-left-radius: toRem(25);
+      font-size: toRem(38);
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    &::before {
+      content: counter(cardCounter, decimal-leading-zero);
+    }
+  }
+  &__corner {
+    width: 100%;
+    aspect-ratio: 1/1;
+    flex-shrink: 0;
+    clip-path: $card-corner-polygon;
+    background-color: #fff;
   }
 }

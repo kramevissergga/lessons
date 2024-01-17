@@ -6,17 +6,13 @@ $maxWidthContainer: 864;
 $containerPadding: 30;
 $containerWidth: $maxWidthContainer + $containerPadding;
 
-:root {
-  --body-background-color: #333;
-}
-
 @import "_reset.scss";
 @import "_fonts.scss";
 @import "_functions.scss";
 @import "_polygons.scss";
 
 body {
-  background-color: var(--body-background-color);
+  background-color: #333;
   font-family: "Montserrat", sans-serif;
   color: #fff;
   font-size: toRem(12);

@@ -5,7 +5,7 @@
 }
 .title-section {
   @extend %title;
-  @include adaptiveValue("font-size", 40, 24);
+  @include adaptiveValue("font-size", 40, 30);
   font-weight: 700;
   line-height: 1.21;
   &--white {
@@ -61,6 +61,9 @@
     background-color: #37393f;
     color: #fff;
     padding: toRem(21) toRem(43);
+    @media (max-width: toEm(400)) {
+      padding: toRem(20);
+    }
   }
 }
 .green {

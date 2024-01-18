@@ -100,6 +100,11 @@ body {
   padding: 50px 0;
 }
 
+.title {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+}
+
 .news {
   display: flex;
   flex-direction: column;
@@ -189,11 +194,6 @@ body {
     background-color: #40ddb6;
     text-decoration: underline;
   }
-}
-
-.title {
-  color: #37393f;
-  font-family: "Poppins", sans-serif;
 }
 
 .item-news__prewiew {

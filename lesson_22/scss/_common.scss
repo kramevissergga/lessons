@@ -11,6 +11,11 @@
   &--white {
     color: #fff;
   }
+  &--margin {
+    &:not(:last-child) {
+      margin-bottom: toEm(16, 40);
+    }
+  }
 }
 .decorated-subtitle {
   color: #37393f;
@@ -29,17 +34,9 @@
     background-color: #40ddb6;
     margin-top: toRem(3);
   }
-}
-.header-section {
-  &__subtitle {
+  &--margin {
     &:not(:last-child) {
       margin-bottom: toEm(16, 18);
-    }
-  }
-
-  &__title {
-    &:not(:last-child) {
-      margin-bottom: toEm(16, 40);
     }
   }
 }
@@ -59,6 +56,11 @@
   }
   &:active {
     background-color: #515aad;
+  }
+  &--black {
+    background-color: #37393f;
+    color: #fff;
+    padding: toRem(21) toRem(43);
   }
 }
 .green {

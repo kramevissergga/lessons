@@ -25,7 +25,10 @@ body {
   flex-grow: 1;
   padding: 50px 0;
 }
-
+.title {
+  color: $titleColor;
+  font-family: "Poppins", sans-serif;
+}
 .news {
   display: flex;
   flex-direction: column;
@@ -113,10 +116,7 @@ body {
     }
   }
 }
-.title {
-  color: $titleColor;
-  font-family: "Poppins", sans-serif;
-}
+
 .item-news {
   &__prewiew {
     position: relative;

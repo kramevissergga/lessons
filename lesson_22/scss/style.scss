@@ -1,16 +1,16 @@
 @use "sass:math";
 
+@import "_reset.scss";
+@import "_fonts.scss";
+@import "_functions.scss";
+
 $minWidth: 320;
 $maxWidth: 1920;
 $maxWidthContainer: 1220;
 $containerPadding: 30;
 $containerWidth: $maxWidthContainer + $containerPadding;
 
-@import "_reset.scss";
-@import "_fonts.scss";
-@import "_functions.scss";
 @import "_common.scss";
-
 body {
   font-family: "Inter", sans-serif;
   font-size: toRem(18);
@@ -36,10 +36,6 @@ body {
 @import "_header.scss";
 .page {
   flex-grow: 1;
-  padding-top: toRem(188);
-  @media (max-width: toEm(1088)) {
-    padding-top: toRem(78);
-  }
   &__section {
     &:not(:last-child) {
       @include adaptiveValue("margin-bottom", 100, 40);
@@ -48,7 +44,7 @@ body {
 }
 
 .hero {
-  min-height: 100vh;
+  min-height: 100svh;
   position: relative;
   display: flex;
   &__background {
@@ -71,7 +67,6 @@ body {
     }
     padding: toRem(15);
     background-color: rgba(55, 57, 63, 0.9);
-    backdrop-filter: blur(toRem(9.5));
   }
   &__details {
     max-width: toRem(529);
@@ -167,6 +162,7 @@ body {
   &__img {
     aspect-ratio: 408/446;
     width: 100%;
+    min-width: toRem(250);
     &:not(:last-child) {
       margin-bottom: toRem(22);
     }
@@ -334,8 +330,12 @@ body {
 .logos {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  @media (max-width: toEm(700)) {
+    grid-template-columns: repeat(3, 1fr);
+  }
   align-items: center;
   @include adaptiveValue("column-gap", 115, 10);
+  row-gap: toRem(20);
   flex-wrap: wrap;
   &__item {
     object-fit: contain;

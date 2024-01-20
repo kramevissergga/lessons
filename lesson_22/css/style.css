@@ -196,9 +196,6 @@ body {
 
 .header {
   background-color: #fff;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 55;
 }
@@ -566,12 +563,6 @@ body {
 
 .page {
   flex-grow: 1;
-  padding-top: 11.75rem;
-}
-@media (max-width: 68em) {
-  .page {
-    padding-top: 4.875rem;
-  }
 }
 @media (min-width: 78.125em) {
   .page__section:not(:last-child) {
@@ -597,7 +588,7 @@ body {
 }
 
 .hero {
-  min-height: 100vh;
+  min-height: 100svh;
   position: relative;
   display: flex;
 }
@@ -617,7 +608,6 @@ body {
   flex: 0 0 51.8125rem;
   padding: 0.9375rem;
   background-color: rgba(55, 57, 63, 0.9);
-  backdrop-filter: blur(0.59375rem);
 }
 @media (max-width: 61.99875em) {
   .hero__content {
@@ -730,6 +720,7 @@ body {
 .side-about__img {
   aspect-ratio: 408/446;
   width: 100%;
+  min-width: 15.625rem;
 }
 .side-about__img:not(:last-child) {
   margin-bottom: 1.375rem;
@@ -933,7 +924,13 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
+  row-gap: 1.25rem;
   flex-wrap: wrap;
+}
+@media (max-width: 43.75em) {
+  .logos {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media (min-width: 78.125em) {
   .logos {

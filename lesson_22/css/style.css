@@ -588,9 +588,14 @@ body {
 }
 
 .hero {
-  min-height: 100svh;
+  min-height: calc(100svh - 11.75rem);
   position: relative;
   display: flex;
+}
+@media (max-width: 68em) {
+  .hero {
+    min-height: calc(100svh - 4.875rem);
+  }
 }
 .hero__background {
   position: absolute;

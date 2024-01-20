@@ -44,7 +44,10 @@ body {
 }
 
 .hero {
-  min-height: 100svh;
+  min-height: calc(100svh - toRem(188));
+  @media (max-width: toEm(1088)) {
+    min-height: calc(100svh - toRem(78));
+  }
   position: relative;
   display: flex;
   &__background {
